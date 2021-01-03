@@ -1,0 +1,874 @@
+fileFormatVersion: 2
+guid: ad61d0ac52199ae4bb9dfd468fb1cfc2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 367250725175531689
+    second: urchin 1_0
+  - first:
+      213: -6310734319542875459
+    second: urchin 1_1
+  - first:
+      213: 8707811056614622411
+    second: urchin 1_2
+  - first:
+      213: 7665676890549764891
+    second: urchin 1_3
+  - first:
+      213: 2224516809985868279
+    second: urchin 1_4
+  - first:
+      213: -2356184432049110617
+    second: urchin 1_5
+  - first:
+      213: 1259585421726776712
+    second: urchin 1_6
+  - first:
+      213: 1061947019416617206
+    second: urchin 1_7
+  - first:
+      213: -7414623298795112508
+    second: urchin 1_8
+  - first:
+      213: 2710274437429016519
+    second: urchin 1_9
+  - first:
+      213: -6505696501279619720
+    second: urchin 1_10
+  - first:
+      213: 643237266843101986
+    second: urchin 1_11
+  - first:
+      213: 4554688871358492076
+    second: urchin 1_12
+  - first:
+      213: -8468351954148075043
+    second: urchin 1_13
+  - first:
+      213: -475571969509001782
+    second: urchin 1_14
+  - first:
+      213: 2855305766734259557
+    second: urchin 1_15
+  - first:
+      213: -8818740198549193731
+    second: urchin 1_16
+  - first:
+      213: 2556684255011062610
+    second: urchin 1_17
+  - first:
+      213: -695958558727738935
+    second: urchin 1_18
+  - first:
+      213: -9178531946674930038
+    second: urchin 1_19
+  - first:
+      213: 3083627837539751737
+    second: urchin 1_20
+  - first:
+      213: -907634175923087212
+    second: urchin 1_21
+  - first:
+      213: -4954755531366478684
+    second: urchin 1_22
+  - first:
+      213: -8859788164965182591
+    second: urchin 1_23
+  - first:
+      213: 936998990167390148
+    second: urchin 1_24
+  - first:
+      213: -1069632208415773264
+    second: urchin 1_25
+  - first:
+      213: 4341100627604073492
+    second: urchin 1_26
+  - first:
+      213: -5967555427960435540
+    second: urchin 1_27
+  - first:
+      213: -3257528154856100371
+    second: urchin 1_28
+  - first:
+      213: 2459943464030983544
+    second: urchin 1_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: urchin 1_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1873
+        width: 174
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a89799b69cb81500800000000000000
+      internalID: 367250725175531689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_1
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1875
+        width: 174
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbac7c37294cb68a0800000000000000
+      internalID: -6310734319542875459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1875
+        width: 175
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4cbb0250c58d870800000000000000
+      internalID: 8707811056614622411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_3
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1877
+        width: 174
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13c3287484f16a60800000000000000
+      internalID: 7665676890549764891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_4
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1877
+        width: 172
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1c710b0421fde10800000000000000
+      internalID: 2224516809985868279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_5
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1681
+        width: 169
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1486e1eb62d4fd0800000000000000
+      internalID: -2356184432049110617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_6
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1681
+        width: 169
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88df84a7442fa7110800000000000000
+      internalID: 1259585421726776712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_7
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1682
+        width: 170
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0cc9e003bccbe00800000000000000
+      internalID: 1061947019416617206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_8
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1682
+        width: 175
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c77bf3e467f91990800000000000000
+      internalID: -7414623298795112508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_9
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1679
+        width: 176
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c737cebd34dc9520800000000000000
+      internalID: 2710274437429016519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_10
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1482
+        width: 177
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8750ab0308f17b5a0800000000000000
+      internalID: -6505696501279619720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_11
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1481
+        width: 178
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22be97cd2ec3de800800000000000000
+      internalID: 643237266843101986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_12
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1479
+        width: 178
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad6fbf8561853f30800000000000000
+      internalID: 4554688871358492076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_13
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1478
+        width: 178
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9d404d3ce5a7a80800000000000000
+      internalID: -8468351954148075043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_14
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1475
+        width: 178
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5784c30dd6669f0800000000000000
+      internalID: -475571969509001782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1278
+        width: 176
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565e15f777510a720800000000000000
+      internalID: 2855305766734259557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_16
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1275
+        width: 174
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb740b538a8d9580800000000000000
+      internalID: -8818740198549193731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_17
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1275
+        width: 174
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253c4c6b8ca2b7320800000000000000
+      internalID: 2556684255011062610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_18
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1275
+        width: 170
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9e3a0d0657756f0800000000000000
+      internalID: -695958558727738935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_19
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1277
+        width: 174
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ebdde03dd4f9080800000000000000
+      internalID: -9178531946674930038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_20
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1079
+        width: 174
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93710143e2f3bca20800000000000000
+      internalID: 3083627837539751737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_21
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1081
+        width: 170
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498991e968f6763f0800000000000000
+      internalID: -907634175923087212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_22
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1082
+        width: 170
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4accffb781c2d3bb0800000000000000
+      internalID: -4954755531366478684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_23
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1083
+        width: 168
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1835a0aea95bb0580800000000000000
+      internalID: -8859788164965182591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_24
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1083
+        width: 168
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7b3dbfd93e00d00800000000000000
+      internalID: 936998990167390148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_25
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 886
+        width: 168
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdaf017c27e721f0800000000000000
+      internalID: -1069632208415773264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_26
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 886
+        width: 170
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ce09a4500be3c30800000000000000
+      internalID: 4341100627604073492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_27
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 886
+        width: 174
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacc6faa4fbfe2da0800000000000000
+      internalID: -5967555427960435540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_28
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 887
+        width: 176
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dede7fbf66feac2d0800000000000000
+      internalID: -3257528154856100371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: urchin 1_29
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 887
+        width: 174
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8755c151c89732220800000000000000
+      internalID: 2459943464030983544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 83a41851a9c5bb04cb2d3df5adf46378
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

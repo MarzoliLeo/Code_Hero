@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 079d47ada306e5d46a73365a926f49c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -289726381093580079
+    second: spacecorgi_flat-shoot 1_0
+  - first:
+      213: 6707041573338341300
+    second: spacecorgi_flat-shoot 1_1
+  - first:
+      213: 1050193468248385773
+    second: spacecorgi_flat-shoot 1_2
+  - first:
+      213: 3471954970586092320
+    second: spacecorgi_flat-shoot 1_3
+  - first:
+      213: -4914868953806082050
+    second: spacecorgi_flat-shoot 1_4
+  - first:
+      213: 5504583690657878757
+    second: spacecorgi_flat-shoot 1_5
+  - first:
+      213: 9006535785785977128
+    second: spacecorgi_flat-shoot 1_6
+  - first:
+      213: -8097715167496793759
+    second: spacecorgi_flat-shoot 1_7
+  - first:
+      213: 3930916008191776910
+    second: spacecorgi_flat-shoot 1_8
+  - first:
+      213: -4838730498591560050
+    second: spacecorgi_flat-shoot 1_9
+  - first:
+      213: 4577244006587621696
+    second: spacecorgi_flat-shoot 1_10
+  - first:
+      213: 8882450932315111226
+    second: spacecorgi_flat-shoot 1_11
+  - first:
+      213: -181804084488517665
+    second: spacecorgi_flat-shoot 1_12
+  - first:
+      213: -5912877269601709789
+    second: spacecorgi_flat-shoot 1_13
+  - first:
+      213: -2336728332122922898
+    second: spacecorgi_flat-shoot 1_14
+  - first:
+      213: -3206179817843515079
+    second: spacecorgi_flat-shoot 1_15
+  - first:
+      213: 3409956012613220127
+    second: spacecorgi_flat-shoot 1_16
+  - first:
+      213: 4899404640471703456
+    second: spacecorgi_flat-shoot 1_17
+  - first:
+      213: -2647011524530828695
+    second: spacecorgi_flat-shoot 1_18
+  - first:
+      213: 6684540522339258247
+    second: spacecorgi_flat-shoot 1_19
+  - first:
+      213: -6004675508927297084
+    second: spacecorgi_flat-shoot 1_20
+  - first:
+      213: -7087988253558854960
+    second: spacecorgi_flat-shoot 1_21
+  - first:
+      213: 3171495820456459371
+    second: spacecorgi_flat-shoot 1_22
+  - first:
+      213: 7639250322694993718
+    second: spacecorgi_flat-shoot 1_23
+  - first:
+      213: 1005223127609947836
+    second: spacecorgi_flat-shoot 1_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 364
+        width: 140
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d29bd4346faafbf0800000000000000
+      internalID: -289726381093580079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_1
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 364
+        width: 144
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfdb9886c2341d50800000000000000
+      internalID: 6707041573338341300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 364
+        width: 144
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8616c2569039e00800000000000000
+      internalID: 1050193468248385773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 364
+        width: 143
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0239fe986acde2030800000000000000
+      internalID: 3471954970586092320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_4
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 364
+        width: 143
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effeac20ab0eacbb0800000000000000
+      internalID: -4914868953806082050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_5
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 364
+        width: 142
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2521eb3b5346c40800000000000000
+      internalID: 5504583690657878757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_6
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 364
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829ed981494adfc70800000000000000
+      internalID: 9006535785785977128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_7
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 364
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1619f0d65f22f9f80800000000000000
+      internalID: -8097715167496793759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_8
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 364
+        width: 140
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88da26584b6d8630800000000000000
+      internalID: 3930916008191776910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_9
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 364
+        width: 141
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ee99b8f3069dcb0800000000000000
+      internalID: -4838730498591560050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_10
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 364
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041e0f63c23a58f30800000000000000
+      internalID: 4577244006587621696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_11
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 364
+        width: 140
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fba7bcf0ec44b70800000000000000
+      internalID: 8882450932315111226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_12
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 364
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7c85df52a1a7df0800000000000000
+      internalID: -181804084488517665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_13
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 364
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32198e8737d31fda0800000000000000
+      internalID: -5912877269601709789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_14
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 364
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60e83366f5429fd0800000000000000
+      internalID: -2336728332122922898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_15
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 364
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9312967517c5183d0800000000000000
+      internalID: -3206179817843515079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_16
+      rect:
+        serializedVersion: 2
+        x: 2743
+        y: 364
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17b48f3de8925f20800000000000000
+      internalID: 3409956012613220127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_17
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 364
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af5736ff8e2ef340800000000000000
+      internalID: 4899404640471703456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_18
+      rect:
+        serializedVersion: 2
+        x: 3083
+        y: 364
+        width: 137
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a89fbfa0de34bd0800000000000000
+      internalID: -2647011524530828695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_19
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 364
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f4cb8503244cc50800000000000000
+      internalID: 6684540522339258247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_20
+      rect:
+        serializedVersion: 2
+        x: 3423
+        y: 364
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c986e2507b1baca0800000000000000
+      internalID: -6004675508927297084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_21
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 364
+        width: 140
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0daab76bc3862ad90800000000000000
+      internalID: -7087988253558854960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_22
+      rect:
+        serializedVersion: 2
+        x: 3763
+        y: 364
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c71f835aa630c20800000000000000
+      internalID: 3171495820456459371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_23
+      rect:
+        serializedVersion: 2
+        x: 3932
+        y: 364
+        width: 141
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637f58aa1b1140a60800000000000000
+      internalID: 7639250322694993718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-shoot 1_24
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 216
+        width: 140
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6b231db1543fd00800000000000000
+      internalID: 1005223127609947836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 35222db72ce7df6439478e797e18a189
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

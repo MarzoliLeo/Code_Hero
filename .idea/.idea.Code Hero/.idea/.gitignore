@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.Code Hero.iml
+# Datasource local storage ignored files
+/../../../../../../:\Unity_projects\Code Hero\.idea\.idea.Code Hero\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
