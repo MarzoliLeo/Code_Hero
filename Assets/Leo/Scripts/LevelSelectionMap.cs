@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
-using System.Linq;
+
 
 namespace Leo.Scripts
 {
-    public class PlayerMoveMap : MonoBehaviour
+    public class LevelSelectionMap : MonoBehaviour
     {
         private Waypoint _waypoint;
-        public GameObject playerToMove;                                //sprite da muovere.
-        public List<GameObject> waypoints = new List<GameObject>();    //Lista che contiene i waypoints.
+        public GameObject playerToMove;               //sprite da muovere.
 
         private Vector3 offsetPosition = new Vector3(0.1f, 0.5f, 0);  //offset
 
@@ -18,30 +17,17 @@ namespace Leo.Scripts
         private bool movePlayer;
         private bool isLevelReached;
 
-        private int currentIndex;
-        private int destinationIndex;
-
         private GameManager _gameManager;
+        private WaypointManager _waypointManager;
+        private UIManager _uiManager;
+        
     
         // Start is called before the first frame update
         void Start()
         {
             _gameManager = GameObject.FindObjectOfType<GameManager>();
-            foreach (var i in waypoints)
-            {
-                if (i.GetComponent<Waypoint>() != null)
-                {
-                    if (i.GetComponent<Waypoint>().levelIndex == _gameManager.LevelOrigin)
-                    {
-                        currentIndex = waypoints.FindIndex(w =>
-                        {
-                            return i.name.Equals(w.name);
-                        });
-                        playerToMove.transform.position = waypoints[currentIndex].transform.position + offsetPosition;
-                        destinationIndex = currentIndex;
-                    }
-                }
-            }
+            _waypointManager = GameObject.FindObjectOfType<WaypointManager>();
+            _uiManager = GameObject.FindObjectOfType<UIManager>();
         }
 
         private void Update()
@@ -54,15 +40,15 @@ namespace Leo.Scripts
         {
             if (!movePlayer) { return; }
             transform.position = Vector3.MoveTowards(playerToMove.transform.position,
-                    waypoints[destinationIndex].transform.position + offsetPosition, Time.deltaTime * characterSpeed);
+                _waypointManager.Waypoints[_waypointManager.DestinationIndex].transform.position + offsetPosition, Time.deltaTime * characterSpeed);
         }
 
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (destinationIndex < waypoints.Count - 1)
+            if (_waypointManager.DestinationIndex < _waypointManager.Waypoints.Count - 1)
             {
-                destinationIndex++;
+                _waypointManager.DestinationIndex++;
             }
             
             movePlayer = false;
@@ -70,8 +56,11 @@ namespace Leo.Scripts
 
             if (waypointComponent != null)
             {
+                _uiManager.SetLevelText("Level " + waypointComponent.levelIndex.ToString());
+                
                 if (waypointComponent.levelIndex == _gameManager.LevelDestination)
                 {
+                    _uiManager.SetActiveButton(true);
                     isLevelReached = true;
                 }
             }
@@ -83,7 +72,12 @@ namespace Leo.Scripts
             {
                 movePlayer = true;
             }
-                
+        }
+    
+        //Funzione per settare la posizione del player alla starting Position.
+        public void SetStartPosition(Vector3 startPos)
+        {
+            playerToMove.transform.position = startPos + offsetPosition;
         }
     }
 }
