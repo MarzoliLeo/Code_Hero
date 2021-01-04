@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     
     private void Start()
     {
-        LevelOrigin = 1;
+        LevelOrigin = 2;
         LevelDestination = 3;
     }
 }
