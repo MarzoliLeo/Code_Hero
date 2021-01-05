@@ -19,7 +19,7 @@ namespace Leo.Scripts
 
         private GameManager _gameManager;
         private WaypointManager _waypointManager;
-        private UIManager _uiManager;
+        private LevelUISelection _levelUISelection;
         
     
         // Start is called before the first frame update
@@ -27,7 +27,7 @@ namespace Leo.Scripts
         {
             _gameManager = GameManager.Instance;
             _waypointManager = GameObject.FindObjectOfType<WaypointManager>();
-            _uiManager = GameObject.FindObjectOfType<UIManager>();
+            _levelUISelection = GameObject.FindObjectOfType<LevelUISelection>();
         }
 
         private void Update()
@@ -56,11 +56,11 @@ namespace Leo.Scripts
 
             if (waypointComponent != null)
             {
-                _uiManager.SetLevelText("Level " + waypointComponent.levelIndex.ToString());
+                _levelUISelection.SetLevelText("Level " + waypointComponent.levelIndex.ToString());
                 
                 if (waypointComponent.levelIndex == _gameManager.LevelDestinationIndex)
                 {
-                    _uiManager.SetActiveButton(true);
+                    _levelUISelection.SetActiveButton(true);
                     isLevelReached = true;
                 }
             }
