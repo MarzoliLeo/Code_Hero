@@ -1,12 +1,99 @@
 fileFormatVersion: 2
 guid: 66b37c6d991100443a79f97be2e56e40
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4906103028376134241
+    second: spacecorgi_flat-idle 1_0
+  - first:
+      213: -7564197247422122504
+    second: spacecorgi_flat-idle 1_1
+  - first:
+      213: 4908335041172422890
+    second: spacecorgi_flat-idle 1_2
+  - first:
+      213: -4852442481749578458
+    second: spacecorgi_flat-idle 1_3
+  - first:
+      213: 1017045062546889396
+    second: spacecorgi_flat-idle 1_4
+  - first:
+      213: -1626914930276839686
+    second: spacecorgi_flat-idle 1_5
+  - first:
+      213: -7971715413106091435
+    second: spacecorgi_flat-idle 1_6
+  - first:
+      213: -6643154002624826256
+    second: spacecorgi_flat-idle 1_7
+  - first:
+      213: 670129183296009939
+    second: spacecorgi_flat-idle 1_8
+  - first:
+      213: -1950823521554491681
+    second: spacecorgi_flat-idle 1_9
+  - first:
+      213: 5806424979758699150
+    second: spacecorgi_flat-idle 1_10
+  - first:
+      213: -8986111874577439069
+    second: spacecorgi_flat-idle 1_11
+  - first:
+      213: 3563522777222715422
+    second: spacecorgi_flat-idle 1_12
+  - first:
+      213: 7070997908241690583
+    second: spacecorgi_flat-idle 1_13
+  - first:
+      213: -6701200303307142450
+    second: spacecorgi_flat-idle 1_14
+  - first:
+      213: 7377288269138241517
+    second: spacecorgi_flat-idle 1_15
+  - first:
+      213: -6264338316783680904
+    second: spacecorgi_flat-idle 1_16
+  - first:
+      213: 2566469092834194423
+    second: spacecorgi_flat-idle 1_17
+  - first:
+      213: 8327462016453795345
+    second: spacecorgi_flat-idle 1_18
+  - first:
+      213: 879949544032793946
+    second: spacecorgi_flat-idle 1_19
+  - first:
+      213: 4589533229555955981
+    second: spacecorgi_flat-idle 1_20
+  - first:
+      213: 4971017744939622509
+    second: spacecorgi_flat-idle 1_21
+  - first:
+      213: 8396196749397931290
+    second: spacecorgi_flat-idle 1_22
+  - first:
+      213: -4889277746337543598
+    second: spacecorgi_flat-idle 1_23
+  - first:
+      213: -2001780405786337514
+    second: spacecorgi_flat-idle 1_24
+  - first:
+      213: -3177383017132507379
+    second: spacecorgi_flat-idle 1_25
+  - first:
+      213: 3614304847381732610
+    second: spacecorgi_flat-idle 1_26
+  - first:
+      213: 8851349490211835755
+    second: spacecorgi_flat-idle 1_27
+  - first:
+      213: -4087808223025333803
+    second: spacecorgi_flat-idle 1_28
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +122,13 @@ TextureImporter:
     filterMode: -1
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +137,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -121,13 +208,634 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 367
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d1c221a450aebb0800000000000000
+      internalID: -4906103028376134241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 367
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5ba682ea2960790800000000000000
+      internalID: -7564197247422122504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 367
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae04fa7e6b8ed1440800000000000000
+      internalID: 4908335041172422890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 366
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d2d4ea549a8acb0800000000000000
+      internalID: -4852442481749578458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_4
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 366
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba1ca988154d1e00800000000000000
+      internalID: 1017045062546889396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_5
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 366
+        width: 140
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afec11d9d790c69e0800000000000000
+      internalID: -1626914930276839686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_6
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 366
+        width: 140
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a1e475117ce5190800000000000000
+      internalID: -7971715413106091435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_7
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 366
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074355da1a6cec3a0800000000000000
+      internalID: -6643154002624826256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_8
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 366
+        width: 139
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d63bf311f6cc4900800000000000000
+      internalID: 670129183296009939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_9
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 366
+        width: 139
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd69442d7584de4e0800000000000000
+      internalID: -1950823521554491681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_10
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 366
+        width: 139
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82d87d51c0949050800000000000000
+      internalID: 5806424979758699150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_11
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 366
+        width: 139
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a664eb4cdaea4380800000000000000
+      internalID: -8986111874577439069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_12
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 366
+        width: 139
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e189f55e51d247130800000000000000
+      internalID: 3563522777222715422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_13
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 366
+        width: 139
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfa640422b312260800000000000000
+      internalID: 7070997908241690583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_14
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 366
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca43a024dd8003a0800000000000000
+      internalID: -6701200303307142450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_15
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 366
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de724af1894616660800000000000000
+      internalID: 7377288269138241517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_16
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 366
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8728d33ad799019a0800000000000000
+      internalID: -6264338316783680904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_17
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 366
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3b66dca0eed9320800000000000000
+      internalID: 2566469092834194423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_18
+      rect:
+        serializedVersion: 2
+        x: 2594
+        y: 366
+        width: 138
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e594b4596119370800000000000000
+      internalID: 8327462016453795345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_19
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 366
+        width: 139
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a557758b275363c00800000000000000
+      internalID: 879949544032793946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_20
+      rect:
+        serializedVersion: 2
+        x: 2882
+        y: 366
+        width: 139
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09b888e72c41bf30800000000000000
+      internalID: 4589533229555955981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_21
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 366
+        width: 139
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d602a4b2d4a9cf440800000000000000
+      internalID: 4971017744939622509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_22
+      rect:
+        serializedVersion: 2
+        x: 3170
+        y: 366
+        width: 139
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1537286578458470800000000000000
+      internalID: 8396196749397931290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_23
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 366
+        width: 140
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a04515bcbc52cb0800000000000000
+      internalID: -4889277746337543598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_24
+      rect:
+        serializedVersion: 2
+        x: 3458
+        y: 366
+        width: 140
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f94caa35f3834e0800000000000000
+      internalID: -2001780405786337514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_25
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 366
+        width: 140
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f357cfafaa7e3d0800000000000000
+      internalID: -3177383017132507379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_26
+      rect:
+        serializedVersion: 2
+        x: 3747
+        y: 366
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d192afb17982230800000000000000
+      internalID: 3614304847381732610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_27
+      rect:
+        serializedVersion: 2
+        x: 3891
+        y: 366
+        width: 139
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f49e2077f46da70800000000000000
+      internalID: 8851349490211835755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spacecorgi_flat-idle 1_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 220
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d977ac44103547c0800000000000000
+      internalID: -4087808223025333803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 094b57a0b454cc5419ff28a62566a712
     internalID: 0
     vertices: []
     indices: 

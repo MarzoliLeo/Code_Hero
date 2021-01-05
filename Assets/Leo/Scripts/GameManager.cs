@@ -1,28 +1,36 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace Leo.Scripts
 {
-    private int levelDestination;
-    private int levelOrigin;
+    public class GameManager : Singleton<GameManager>
+    {
+        private int _levelDestinationIndex;
+        private int _levelOriginIndex;
+        
+        
+        private Waypoint destinationWaypoint;
+        public Waypoint DestinationWaypoint
+        {
+            get => destinationWaypoint;
+            set => destinationWaypoint = value;
+        }
 
-    public int LevelOrigin
-    {
-        get => levelOrigin;
-        set => levelOrigin = value;
-    }
+        public int LevelOriginIndex
+        {
+            get => _levelOriginIndex;
+            set => _levelOriginIndex = value;
+        }
     
-    public int LevelDestination
-    {
-        get => levelDestination;
-        set => levelDestination = value;
-    }
+        public int LevelDestinationIndex
+        {
+            get => _levelDestinationIndex;
+            set => _levelDestinationIndex = value;
+        }
     
-    private void Start()
-    {
-        LevelOrigin = 2;
-        LevelDestination = 3;
+        private void Start()
+        {
+            LevelOriginIndex = 1;
+            LevelDestinationIndex = 1;
+        }
     }
 }

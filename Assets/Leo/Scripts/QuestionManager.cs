@@ -10,7 +10,7 @@ namespace Leo.Scripts
         // Start is called before the first frame update
         void Start()
         {
-            List<Answer> answers = new List<Answer>()
+            /*List<Answer> answers = new List<Answer>()
             {
                 new Answer("Procedurale",false),
                 new Answer("Ad Oggetti",true),
@@ -23,54 +23,32 @@ namespace Leo.Scripts
                 new Question("Che tipo di linguaggio e' C#", answers)
             };
             
-            QuestionLevel questionLevel = new QuestionLevel(questions);
-            
+            QuestionLevel questionLevel = new QuestionLevel(questions);*/
+
+            QuestionDeserialize();
+        }
+        
+        //Metodo per deserializzare una domanda
+        private void QuestionDeserialize()
+        {
+            //Estraiamo i dati dal Json e li mettiamo in deserializedQuestion
+            string json = File.ReadAllText(Application.dataPath + "/Leo/Json/Level" +
+                                           GameManager.Instance.DestinationWaypoint.levelIndex + ".json");
+            QuestionLevel deserializedQuestionLevel = JsonUtility.FromJson<QuestionLevel>(json);
+            Debug.Log(deserializedQuestionLevel.questions.Count);
+        }
+
+        //Metodo per serializzare una domanda
+        private string QuestionSerialize(QuestionLevel questionLevel)
+        {
             //Creiamo il file Json della classe question
             string json = JsonUtility.ToJson(questionLevel);
             Debug.Log(json);
-            
+
             //andiamo a salvare il file Json
-            File.WriteAllText(Application.dataPath + "/saveFile.json", json);
-            
-            //Estraiamo i dati dal Json e li mettiamo in deserializedQuestion
-            QuestionLevel deserializedQuestionLevel = JsonUtility.FromJson<QuestionLevel>(json);
-            Debug.Log(deserializedQuestionLevel.questions);
-
-        }
-    }
-    [Serializable]
-    public class QuestionLevel
-    {
-        public List<Question> questions;
-        
-        public QuestionLevel(List<Question> questions)
-        {
-            this.questions = questions;
-        }
-    }
-    
-    [Serializable]
-    public class Question
-    {
-        public string question;
-        public List<Answer> answers;
-
-        public Question(string question,List<Answer> answers)
-        {
-            this.question = question;
-            this.answers = answers;
-        }
-    }
-    [Serializable]
-    public class Answer
-    {
-        public string text;
-        public bool isCorrect;
-        
-        public Answer(string text, bool isCorrect)
-        {
-            this.text = text;
-            this.isCorrect = isCorrect;
+            File.WriteAllText(
+                Application.dataPath + "/Leo/Json/Level" + GameManager.Instance.DestinationWaypoint.levelIndex + ".json", json);
+            return json;
         }
     }
 }

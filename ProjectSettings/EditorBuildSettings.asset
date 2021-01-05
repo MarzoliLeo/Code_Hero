@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Leo/Scenes/LevelSelectionMap.unity
+    guid: 0bba9bfc439ed1f458ec61e4c0008ebd
+  - enabled: 1
     path: Assets/Leo/Scenes/Level1.unity
     guid: 8b4fa9ba7a29b37468a7914fa332880e
   - enabled: 1

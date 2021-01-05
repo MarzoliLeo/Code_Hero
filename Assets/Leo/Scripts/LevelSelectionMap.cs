@@ -25,7 +25,7 @@ namespace Leo.Scripts
         // Start is called before the first frame update
         void Start()
         {
-            _gameManager = GameObject.FindObjectOfType<GameManager>();
+            _gameManager = GameManager.Instance;
             _waypointManager = GameObject.FindObjectOfType<WaypointManager>();
             _uiManager = GameObject.FindObjectOfType<UIManager>();
         }
@@ -58,7 +58,7 @@ namespace Leo.Scripts
             {
                 _uiManager.SetLevelText("Level " + waypointComponent.levelIndex.ToString());
                 
-                if (waypointComponent.levelIndex == _gameManager.LevelDestination)
+                if (waypointComponent.levelIndex == _gameManager.LevelDestinationIndex)
                 {
                     _uiManager.SetActiveButton(true);
                     isLevelReached = true;

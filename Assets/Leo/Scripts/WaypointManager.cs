@@ -17,8 +17,6 @@ namespace Leo.Scripts
         private int currentIndex;
         private int destinationIndex;
 
-        private Waypoint destinationWaypoint;
-
         //props.
         public int CurrentIndex
         {
@@ -31,12 +29,7 @@ namespace Leo.Scripts
             get => destinationIndex;
             set => destinationIndex = value;
         }
-        
-        public Waypoint DestinationWaypoint
-        {
-            get => destinationWaypoint;
-        }
-        
+
 
         //Readyonly prop.
         public List<GameObject> Waypoints
@@ -46,7 +39,7 @@ namespace Leo.Scripts
 
         private void Start()
         {
-            _gameManager = GameObject.FindObjectOfType<GameManager>();
+            _gameManager = GameManager.Instance;
             _levelSelectionMap = GameObject.FindObjectOfType<LevelSelectionMap>();
             
             //Facciamo ritornare il player una volta terminato il livello nella posizione di origine.
@@ -54,7 +47,7 @@ namespace Leo.Scripts
             {
                 if (i.GetComponent<Waypoint>() != null)
                 {
-                    if (i.GetComponent<Waypoint>().levelIndex == _gameManager.LevelOrigin)
+                    if (i.GetComponent<Waypoint>().levelIndex == _gameManager.LevelOriginIndex)
                     {
                         currentIndex = Waypoints.FindIndex(w =>
                         {
@@ -64,9 +57,9 @@ namespace Leo.Scripts
                         destinationIndex = currentIndex;
                     }
 
-                    if (i.GetComponent<Waypoint>().levelIndex == _gameManager.LevelDestination)
+                    if (i.GetComponent<Waypoint>().levelIndex == _gameManager.LevelDestinationIndex)
                     {
-                        destinationWaypoint = i.GetComponent<Waypoint>();
+                        GameManager.Instance.DestinationWaypoint = i.GetComponent<Waypoint>();
                     }
                 }
             }
