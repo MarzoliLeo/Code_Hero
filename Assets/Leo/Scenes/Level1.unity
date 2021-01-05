@@ -860,7 +860,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 317201868}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 581724749}
+        m_TargetAssemblyTypeName: Leo.Scripts.AnswerController, Assembly-CSharp
+        m_MethodName: CheckAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &317201868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,7 +992,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 367041291}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1708158737}
+        m_TargetAssemblyTypeName: Leo.Scripts.AnswerController, Assembly-CSharp
+        m_MethodName: CheckAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &367041291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,7 +1427,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc1e3246d39b5c48aaa03c0f563bc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCorrect: 0
 --- !u!1 &615459529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,7 +1798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc1e3246d39b5c48aaa03c0f563bc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCorrect: 0
 --- !u!1 &699879428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,7 +2857,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1524367328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 688348727}
+        m_TargetAssemblyTypeName: Leo.Scripts.AnswerController, Assembly-CSharp
+        m_MethodName: CheckAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1524367328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3271,7 +3305,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc1e3246d39b5c48aaa03c0f563bc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCorrect: 0
 --- !u!1 &1727561896
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,7 +3562,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1892245705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2094968962}
+        m_TargetAssemblyTypeName: Leo.Scripts.AnswerController, Assembly-CSharp
+        m_MethodName: CheckAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1892245705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4067,7 +4112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc1e3246d39b5c48aaa03c0f563bc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCorrect: 0
 --- !u!1 &2096852030
 GameObject:
   m_ObjectHideFlags: 0

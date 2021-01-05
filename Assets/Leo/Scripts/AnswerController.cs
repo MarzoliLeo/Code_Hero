@@ -9,6 +9,9 @@ namespace Leo.Scripts
     {
         private TextMeshProUGUI buttonTextMeshPro;
         private bool isCorrect;
+        
+        public delegate void OnButtonClickDelegate(bool isCorrect);
+        public static event  OnButtonClickDelegate onCheckAnswerEvent;
 
         public bool IsCorrect
         {
@@ -20,6 +23,7 @@ namespace Leo.Scripts
             get => buttonTextMeshPro;
         }
 
+        //Collegamento all'evento
         private void Awake()
         {
             buttonTextMeshPro = this.gameObject.GetComponent<TextMeshProUGUI>();
@@ -31,6 +35,12 @@ namespace Leo.Scripts
             this.buttonTextMeshPro.text = text;
             this.isCorrect = value;
         }
+
+        public void CheckAnswer()
+        {
+            onCheckAnswerEvent?.Invoke(IsCorrect);
+        }
+        
     }
     
 }
