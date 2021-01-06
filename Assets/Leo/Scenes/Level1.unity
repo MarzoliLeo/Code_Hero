@@ -300,8 +300,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588a0b81f5a2ae244b96eec22618aa60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLifeSlider: {fileID: 1607855499}
   originShooting: {fileID: 155536546}
   projectile: {fileID: 999640197893964420, guid: 001cdbbe858f91c4db18c87458013c43, type: 3}
+  isPlayerDead: 0
 --- !u!212 &57545114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1575,7 +1577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.97, y: -0.11}
+  m_AnchoredPosition: {x: -1.63, y: -0.11}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &677782999
@@ -2282,6 +2284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyLifeSlider: {fileID: 1128481344}
+  originShooting: {fileID: 674351122}
+  projectile: {fileID: 3508157283057900756, guid: 998b61d444f1029469abe30917fab2ba, type: 3}
   isEnemyDead: 0
 --- !u!95 &1059880471
 Animator:

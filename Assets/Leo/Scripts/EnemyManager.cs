@@ -9,26 +9,28 @@ using UnityEngine.SceneManagement;
 public class EnemyManager : MonoBehaviour
 {
     //Healthbar dell'enemy.
-    public  Slider enemyLifeSlider;
+    public Slider enemyLifeSlider;
     
-    //Bool per verificare se il nemico è morto.
+    //Variabili per associare lo "spawn" del projectile.
+    public  GameObject originShooting;
+    public  GameObject projectile;
+    
+    //OffSet
+    private Vector3 offset = new Vector3(-0.20f,0,0);
+    
+    //Bool per verificare se il nemico è morto (Victory).
     public bool isEnemyDead;
 
     public bool IsEnemyDead
     {
         get => isEnemyDead;
     }
-
-    // Start is called before the first frame update
-    void Start()
+    
+    //Funzione per gestire lo shooting del nemico.
+    public  void ShotToPlayer()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
+        Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
     }
 
     //Funzione per far gestire la morte del nemico.
@@ -46,5 +48,8 @@ public class EnemyManager : MonoBehaviour
         //Set del levelOrigin nel livello appena completato.
         GameManager.Instance.LevelOriginIndex = GameManager.Instance.LevelDestinationIndex;
         SceneManager.LoadScene(0);
+        
+        Debug.Log("L'enemy è morto: "+isEnemyDead);
     }
+    
 }

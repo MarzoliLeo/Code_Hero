@@ -6,11 +6,15 @@ namespace Leo.Scripts
 {
     public class GameManager : Singleton<GameManager>
     {
+        //
         private int _levelDestinationIndex;
         private int _levelOriginIndex;
-
+        
+        //Riferimento ai player ed enemy del Livello.(1)
         private PlayerManager _playerManagerRef;
-
+        private EnemyManager _enemyManagerRef;
+        
+        //
         private Waypoint destinationWaypoint;
 
         public Waypoint DestinationWaypoint
@@ -52,19 +56,17 @@ namespace Leo.Scripts
 
         public void OnAnswerEvaluation(bool value)
         {
+            StartCoroutine(SetTheVariables());
+            
             if (value)
             {
-                //TODO player.ShotToEnemy();
-                
-                StartCoroutine(SetTheVariables());
-                _playerManagerRef.ShotToEnemy(1);
-                
-                Debug.Log("player.ShotToEnemy()");
+                //Il player spara all'enemy
+                _playerManagerRef.ShotToEnemy();
             }
             else
             {
-                //TODO enemy.ShotToPlayer();
-                Debug.Log("enemy.ShotToPlayer()");
+                //L'enemy spara al player
+                _enemyManagerRef.ShotToPlayer();
             }
         }
 
@@ -72,6 +74,7 @@ namespace Leo.Scripts
         IEnumerator SetTheVariables()
         {
             _playerManagerRef = FindObjectOfType<PlayerManager>();
+            _enemyManagerRef = FindObjectOfType<EnemyManager>();
             yield return new WaitForSeconds(1);
         }
     }
