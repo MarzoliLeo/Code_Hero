@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Leo.Scripts
@@ -8,7 +9,10 @@ namespace Leo.Scripts
         private int _levelDestinationIndex;
         private int _levelOriginIndex;
 
+        private PlayerManager _playerManagerRef;
+
         private Waypoint destinationWaypoint;
+
         public Waypoint DestinationWaypoint
         {
             get => destinationWaypoint;
@@ -51,6 +55,10 @@ namespace Leo.Scripts
             if (value)
             {
                 //TODO player.ShotToEnemy();
+                
+                StartCoroutine(SetTheVariables());
+                _playerManagerRef.ShotToEnemy(1);
+                
                 Debug.Log("player.ShotToEnemy()");
             }
             else
@@ -58,6 +66,13 @@ namespace Leo.Scripts
                 //TODO enemy.ShotToPlayer();
                 Debug.Log("enemy.ShotToPlayer()");
             }
+        }
+
+        //Coroutine per inizializzare il valore di playerShootRef direttamente nel rispettivo livello.
+        IEnumerator SetTheVariables()
+        {
+            _playerManagerRef = FindObjectOfType<PlayerManager>();
+            yield return new WaitForSeconds(1);
         }
     }
 }

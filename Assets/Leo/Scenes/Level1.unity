@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 57545110}
   - component: {fileID: 57545115}
   - component: {fileID: 57545114}
+  - component: {fileID: 57545112}
   m_Layer: 5
   m_Name: Corgi
   m_TagString: Untagged
@@ -247,7 +248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.2700195, y: -2.16}
+  m_AnchoredPosition: {x: -3.2700195, y: -1.97}
   m_SizeDelta: {x: 102, y: 142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!70 &57545110
@@ -263,8 +264,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.18709064, y: -0.014492989}
-  m_Size: {x: 1.138021, y: 1.6112261}
+  m_Offset: {x: -0.18709064, y: -0.06055832}
+  m_Size: {x: 1.138021, y: 1.7033567}
   m_Direction: 0
 --- !u!50 &57545111
 Rigidbody2D:
@@ -278,7 +279,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1.5556802
+  m_Mass: 1.6605266
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 9
@@ -287,6 +288,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &57545112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57545108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 588a0b81f5a2ae244b96eec22618aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originShooting: {fileID: 155536546}
+  projectile: {fileID: 999640197893964420, guid: 001cdbbe858f91c4db18c87458013c43, type: 3}
 --- !u!212 &57545114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -582,7 +597,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6289001967946909010, guid: ac69d19c3dcd3b9479be6b9a5a69f7db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -626,7 +641,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.68, y: -0.4}
+  m_AnchoredPosition: {x: 0.68, y: -0.31}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &199654943
@@ -1560,7 +1575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.97, y: -0.11}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &677782999
@@ -2138,6 +2153,7 @@ GameObject:
   - component: {fileID: 1059880467}
   - component: {fileID: 1059880471}
   - component: {fileID: 1059880469}
+  - component: {fileID: 1059880470}
   m_Layer: 5
   m_Name: Enemy
   m_TagString: Untagged
@@ -2162,7 +2178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.6799927, y: -2.18}
+  m_AnchoredPosition: {x: 2.6799927, y: -2.04}
   m_SizeDelta: {x: 174, y: 153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!58 &1059880467
@@ -2178,9 +2194,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.02835226}
+  m_Offset: {x: 0, y: -0.034090996}
   serializedVersion: 2
-  m_Radius: 0.8132117
+  m_Radius: 0.87565494
 --- !u!50 &1059880468
 Rigidbody2D:
   serializedVersion: 4
@@ -2253,6 +2269,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1059880470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059880465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16a1b8261a4b58468cfd859c37bb76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLifeSlider: {fileID: 1128481344}
+  isEnemyDead: 0
 --- !u!95 &1059880471
 Animator:
   serializedVersion: 3
@@ -2354,9 +2384,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 1
   m_MinValue: 0
-  m_MaxValue: 5
+  m_MaxValue: 1
   m_WholeNumbers: 1
-  m_Value: 5
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2990,9 +3020,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 5
+  m_MaxValue: 1
   m_WholeNumbers: 1
-  m_Value: 5
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3146,7 +3176,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6289001967946909010, guid: ac69d19c3dcd3b9479be6b9a5a69f7db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
