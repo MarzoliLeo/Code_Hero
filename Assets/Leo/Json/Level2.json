@@ -1,0 +1,25 @@
+{
+    "questions": [
+        {
+            "question": "La funzione Random.Next(0,5) puo' restituire",
+            "answers": [
+                {
+                    "text": "-5",
+                    "isCorrect": false
+                },
+                {
+                    "text": "7",
+                    "isCorrect": false
+                },
+                {
+                    "text": "5",
+                    "isCorrect": false
+                },
+                {
+                    "text": "0",
+                    "isCorrect": true
+                }
+            ]
+        }
+    ]
+}
