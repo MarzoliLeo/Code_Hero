@@ -1,12 +1,102 @@
 fileFormatVersion: 2
 guid: 1b7f0d6ee1be41b47ad1eb72ca77fed0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7476079899081601245
+    second: blob-idle 1_0
+  - first:
+      213: 7473865425431844153
+    second: blob-idle 1_1
+  - first:
+      213: 3987573251798622374
+    second: blob-idle 1_2
+  - first:
+      213: -1638054410162667008
+    second: blob-idle 1_3
+  - first:
+      213: -4787462194302254600
+    second: blob-idle 1_4
+  - first:
+      213: 629645917628197624
+    second: blob-idle 1_5
+  - first:
+      213: 6042303197940289862
+    second: blob-idle 1_6
+  - first:
+      213: 3766811483481898450
+    second: blob-idle 1_7
+  - first:
+      213: -4656659057891576093
+    second: blob-idle 1_8
+  - first:
+      213: -7582764243610710276
+    second: blob-idle 1_9
+  - first:
+      213: -1377658523179601004
+    second: blob-idle 1_10
+  - first:
+      213: 5982807270800447165
+    second: blob-idle 1_11
+  - first:
+      213: -1768926371181211963
+    second: blob-idle 1_12
+  - first:
+      213: 8214115064432149199
+    second: blob-idle 1_13
+  - first:
+      213: -2804162223711341548
+    second: blob-idle 1_14
+  - first:
+      213: 768944540171550798
+    second: blob-idle 1_15
+  - first:
+      213: -1548396813673555301
+    second: blob-idle 1_16
+  - first:
+      213: 7814783162255451339
+    second: blob-idle 1_17
+  - first:
+      213: 1787484254264211897
+    second: blob-idle 1_18
+  - first:
+      213: 5744632698208521411
+    second: blob-idle 1_19
+  - first:
+      213: -3474469197441443904
+    second: blob-idle 1_20
+  - first:
+      213: 8067738790172430385
+    second: blob-idle 1_21
+  - first:
+      213: 2507800491237502618
+    second: blob-idle 1_22
+  - first:
+      213: -1960761233506035814
+    second: blob-idle 1_23
+  - first:
+      213: -7658972362984476933
+    second: blob-idle 1_24
+  - first:
+      213: 8621513786846377020
+    second: blob-idle 1_25
+  - first:
+      213: 1121079613474913223
+    second: blob-idle 1_26
+  - first:
+      213: 798951253435058716
+    second: blob-idle 1_27
+  - first:
+      213: -1526255856732171015
+    second: blob-idle 1_28
+  - first:
+      213: 4754833418732615378
+    second: blob-idle 1_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +125,13 @@ TextureImporter:
     filterMode: -1
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +140,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -121,13 +211,655 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: blob-idle 1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 761
+        width: 358
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f8dc611f0af3890800000000000000
+      internalID: -7476079899081601245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 761
+        width: 358
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93550f5910188b760800000000000000
+      internalID: 7473865425431844153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_2
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 761
+        width: 359
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a06e45deb4b65730800000000000000
+      internalID: 3987573251798622374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_3
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 761
+        width: 361
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0020e7751367449e0800000000000000
+      internalID: -1638054410162667008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_4
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 761
+        width: 361
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f18005df748f8db0800000000000000
+      internalID: -4787462194302254600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_5
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 761
+        width: 363
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fae08640a3fcb800800000000000000
+      internalID: 629645917628197624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_6
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 761
+        width: 365
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641107abeb29ad350800000000000000
+      internalID: 6042303197940289862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_7
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 761
+        width: 365
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddfcc83617664430800000000000000
+      internalID: 3766811483481898450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_8
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 761
+        width: 366
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e674464249306fb0800000000000000
+      internalID: -4656659057891576093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_9
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 761
+        width: 367
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfecc0c781c94c690800000000000000
+      internalID: -7582764243610710276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 498
+        width: 368
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49337105fd291ece0800000000000000
+      internalID: -1377658523179601004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 498
+        width: 370
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db65fa7b383370350800000000000000
+      internalID: 5982807270800447165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_12
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 498
+        width: 370
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce4ceb66d28377e0800000000000000
+      internalID: -1768926371181211963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_13
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 498
+        width: 371
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2c9af71266ef170800000000000000
+      internalID: 8214115064432149199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_14
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 498
+        width: 374
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414bd1b805d9519d0800000000000000
+      internalID: -2804162223711341548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_15
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 498
+        width: 373
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40c6e83cf6dbaa00800000000000000
+      internalID: 768944540171550798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_16
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 498
+        width: 374
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a14ad3d4df28ae0800000000000000
+      internalID: -1548396813673555301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_17
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 498
+        width: 371
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4a0fea1efa37c60800000000000000
+      internalID: 7814783162255451339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_18
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 498
+        width: 370
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9b501757b6ec810800000000000000
+      internalID: 1787484254264211897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_19
+      rect:
+        serializedVersion: 2
+        x: 3407
+        y: 498
+        width: 370
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc00dda00909bf40800000000000000
+      internalID: 5744632698208521411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 235
+        width: 368
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c757776ca438cfc0800000000000000
+      internalID: -3474469197441443904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_21
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 235
+        width: 367
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1301ed85fad56ff60800000000000000
+      internalID: 8067738790172430385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_22
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 235
+        width: 366
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ee2c7824f7dc220800000000000000
+      internalID: 2507800491237502618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_23
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 235
+        width: 365
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a971483fb0af9c4e0800000000000000
+      internalID: -1960761233506035814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_24
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 235
+        width: 365
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfea6cff63dd5b590800000000000000
+      internalID: -7658972362984476933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_25
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 235
+        width: 363
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c347c134c15c5a770800000000000000
+      internalID: 8621513786846377020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_26
+      rect:
+        serializedVersion: 2
+        x: 2278
+        y: 235
+        width: 361
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbba1ef7ffde8f00800000000000000
+      internalID: 1121079613474913223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_27
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 235
+        width: 361
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a89d59ee1761b00800000000000000
+      internalID: 798951253435058716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_28
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 235
+        width: 359
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f49e1f7266a1dae0800000000000000
+      internalID: -1526255856732171015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-idle 1_29
+      rect:
+        serializedVersion: 2
+        x: 3413
+        y: 235
+        width: 358
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6b6b95dcf8cf140800000000000000
+      internalID: 4754833418732615378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

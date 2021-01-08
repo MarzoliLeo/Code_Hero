@@ -1,12 +1,102 @@
 fileFormatVersion: 2
 guid: cb3afafe5e2ac09468b457aa23f65742
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8566151218576273768
+    second: blob-walk 1_0
+  - first:
+      213: 1600042097966249443
+    second: blob-walk 1_1
+  - first:
+      213: 2163821162759348780
+    second: blob-walk 1_2
+  - first:
+      213: -379156071879919868
+    second: blob-walk 1_3
+  - first:
+      213: 418843834056011037
+    second: blob-walk 1_4
+  - first:
+      213: -2725038716583687474
+    second: blob-walk 1_5
+  - first:
+      213: 5429700721986367624
+    second: blob-walk 1_6
+  - first:
+      213: -3454245842917076234
+    second: blob-walk 1_7
+  - first:
+      213: -6494448457600677324
+    second: blob-walk 1_8
+  - first:
+      213: -1245208441491569834
+    second: blob-walk 1_9
+  - first:
+      213: 7445186233041106577
+    second: blob-walk 1_10
+  - first:
+      213: -3006899598165004210
+    second: blob-walk 1_11
+  - first:
+      213: -4646357333614413842
+    second: blob-walk 1_12
+  - first:
+      213: 4723705955250445799
+    second: blob-walk 1_13
+  - first:
+      213: -8828707683877285697
+    second: blob-walk 1_14
+  - first:
+      213: 7329671229030434971
+    second: blob-walk 1_15
+  - first:
+      213: 4958861838010597922
+    second: blob-walk 1_16
+  - first:
+      213: -8857930230363601828
+    second: blob-walk 1_17
+  - first:
+      213: 9083449651642670242
+    second: blob-walk 1_18
+  - first:
+      213: 7626012237902478705
+    second: blob-walk 1_19
+  - first:
+      213: 9057265134361510977
+    second: blob-walk 1_20
+  - first:
+      213: 3847478976887670236
+    second: blob-walk 1_21
+  - first:
+      213: 3393211742890754306
+    second: blob-walk 1_22
+  - first:
+      213: 869253532209619666
+    second: blob-walk 1_23
+  - first:
+      213: 4662527640373979655
+    second: blob-walk 1_24
+  - first:
+      213: -2838206359633074214
+    second: blob-walk 1_25
+  - first:
+      213: 6859346931856556303
+    second: blob-walk 1_26
+  - first:
+      213: -7596303905719976486
+    second: blob-walk 1_27
+  - first:
+      213: 847180544263592768
+    second: blob-walk 1_28
+  - first:
+      213: -1165674575257835243
+    second: blob-walk 1_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +125,13 @@ TextureImporter:
     filterMode: -1
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +140,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -121,13 +211,655 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: blob-walk 1_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1785
+        width: 357
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861b48bd52511e670800000000000000
+      internalID: 8566151218576273768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_1
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1785
+        width: 365
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5f2fa8fcd743610800000000000000
+      internalID: 1600042097966249443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_2
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1785
+        width: 371
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c226eb312ef670e10800000000000000
+      internalID: 2163821162759348780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_3
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 1785
+        width: 377
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4073a2dbf87fcbaf0800000000000000
+      internalID: -379156071879919868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_4
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1785
+        width: 386
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d65497f3800d500800000000000000
+      internalID: 418843834056011037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_5
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 1785
+        width: 391
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecac7d2a9b7be2ad0800000000000000
+      internalID: -2725038716583687474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_6
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 1785
+        width: 398
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880fda2f90c2a5b40800000000000000
+      internalID: 5429700721986367624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_7
+      rect:
+        serializedVersion: 2
+        x: 3023
+        y: 1785
+        width: 406
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2de0e05bd0010d0800000000000000
+      internalID: -3454245842917076234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_8
+      rect:
+        serializedVersion: 2
+        x: 3451
+        y: 1785
+        width: 411
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ac0a079851fd5a0800000000000000
+      internalID: -6494448457600677324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1522
+        width: 420
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653c395158128bee0800000000000000
+      internalID: -1245208441491569834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_10
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1522
+        width: 425
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1963b03ce6d925760800000000000000
+      internalID: 7445186233041106577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_11
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1522
+        width: 422
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e403c182fb85546d0800000000000000
+      internalID: -3006899598165004210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_12
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1522
+        width: 419
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7b16e5f92d48fb0800000000000000
+      internalID: -4646357333614413842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_13
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1522
+        width: 415
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed991ef989fd8140800000000000000
+      internalID: 4723705955250445799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_14
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1522
+        width: 413
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb09bb453212a7580800000000000000
+      internalID: -8828707683877285697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_15
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 1522
+        width: 410
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9882c6062938b560800000000000000
+      internalID: 7329671229030434971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_16
+      rect:
+        serializedVersion: 2
+        x: 3023
+        y: 1522
+        width: 406
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222ccd8819a61d440800000000000000
+      internalID: 4958861838010597922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_17
+      rect:
+        serializedVersion: 2
+        x: 3455
+        y: 1522
+        width: 402
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54cbf5036f421580800000000000000
+      internalID: -8857930230363601828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_18
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1259
+        width: 398
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac9e4df455ee0e70800000000000000
+      internalID: 9083449651642670242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_19
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1259
+        width: 395
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d75fcd9b905d960800000000000000
+      internalID: 7626012237902478705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_20
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1259
+        width: 391
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144062af6aed1bd70800000000000000
+      internalID: 9057265134361510977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_21
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1259
+        width: 389
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd54c22aebdf46530800000000000000
+      internalID: 3847478976887670236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_22
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1259
+        width: 386
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20100b62a1c171f20800000000000000
+      internalID: 3393211742890754306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_23
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1259
+        width: 382
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2ab176b75301c00800000000000000
+      internalID: 869253532209619666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_24
+      rect:
+        serializedVersion: 2
+        x: 2607
+        y: 1259
+        width: 378
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a6eef8f20a4b040800000000000000
+      internalID: 4662527640373979655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_25
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 1259
+        width: 374
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7e0d67a5aac98d0800000000000000
+      internalID: -2838206359633074214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_26
+      rect:
+        serializedVersion: 2
+        x: 3471
+        y: 1259
+        width: 371
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01c97031bb413f50800000000000000
+      internalID: 6859346931856556303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_27
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 996
+        width: 367
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addf5ad38d1849690800000000000000
+      internalID: -7596303905719976486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_28
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 996
+        width: 365
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b1479673ac1cb00800000000000000
+      internalID: 847180544263592768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blob-walk 1_29
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 996
+        width: 362
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5196d0a5621b2dfe0800000000000000
+      internalID: -1165674575257835243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a8994c2a293d85348b606a47d420d164
     internalID: 0
     vertices: []
     indices: 

@@ -47,6 +47,8 @@ public class EnemyManager : MonoBehaviour
         isEnemyDead = true;
         //Set del levelOrigin nel livello appena completato.
         GameManager.Instance.LevelOriginIndex = GameManager.Instance.LevelDestinationIndex;
+        //Incrementiamo la destinazione del player.
+        GameManager.Instance.LevelDestinationIndex++;
         SceneManager.LoadScene(0);
         
         Debug.Log("L'enemy è morto: "+isEnemyDead);
