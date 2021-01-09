@@ -10,7 +10,7 @@ public class EnemyManager : MonoBehaviour
 {
     //Healthbar dell'enemy.
     public Slider enemyLifeSlider;
-    
+
     //Variabili per associare lo "spawn" del projectile.
     public  GameObject originShooting;
     public  GameObject projectile;
@@ -24,8 +24,9 @@ public class EnemyManager : MonoBehaviour
     public bool IsEnemyDead
     {
         get => isEnemyDead;
+        set => isEnemyDead = value;
     }
-    
+
     //Funzione per gestire lo shooting del nemico.
     public  void ShotToPlayer()
     {
@@ -37,21 +38,10 @@ public class EnemyManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(other.gameObject);
+        //TODO settare la vita -1
         enemyLifeSlider.value = 0;
-        LevelVictory();
     }
 
-    //Funzione per gestire la vittoria del livello;
-    public void LevelVictory()
-    {
-        isEnemyDead = true;
-        //Set del levelOrigin nel livello appena completato.
-        GameManager.Instance.LevelOriginIndex = GameManager.Instance.LevelDestinationIndex;
-        //Incrementiamo la destinazione del player.
-        GameManager.Instance.LevelDestinationIndex++;
-        SceneManager.LoadScene(0);
-        
-        Debug.Log("L'enemy è morto: "+isEnemyDead);
-    }
+
     
 }

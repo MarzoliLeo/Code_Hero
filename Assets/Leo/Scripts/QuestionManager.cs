@@ -13,6 +13,8 @@ namespace Leo.Scripts
     {
         public TextMeshProUGUI questionText;
         private AnswerController[] _answerController;
+
+        private QuestionLevel ql;
         
         // Start is called before the first frame update
         void Start()
@@ -35,28 +37,38 @@ namespace Leo.Scripts
 
             _answerController = FindObjectsOfType<AnswerController>();
             
-            QuestionLevel ql = QuestionDeserialize();
+            ql = QuestionDeserialize();
             
-            //TODO rimuovere questo foreach e generalizzare in modo che prende una question (random possibilmente) e la mostra.
-            
+            DisplayQuestion();
+        }
+        
+        //Metodo per mostrare la domanda con le risposte.
+        public void DisplayQuestion()
+        {
             Random randomIndex = new Random();
-            var questionToShow = randomIndex.Next(1,ql.questions.Count +1);
-            
-            //***********
+            int  questionToShow = randomIndex.Next(1, ql.questions.Count + 1);
+
             foreach (var q in ql.questions)
             {
                 if (questionToShow == q.number)
                 {
                     questionText.text = q.question;
-                
-                    _answerController[0].SetAnswer(q.answers[0].text,q.answers[0].isCorrect);
-                    _answerController[1].SetAnswer(q.answers[1].text,q.answers[1].isCorrect);
-                    _answerController[2].SetAnswer(q.answers[2].text,q.answers[2].isCorrect);
-                    _answerController[3].SetAnswer(q.answers[3].text,q.answers[3].isCorrect);
+
+                    _answerController[0].SetAnswer(q.answers[0].text, q.answers[0].isCorrect);
+                    _answerController[1].SetAnswer(q.answers[1].text, q.answers[1].isCorrect);
+                    _answerController[2].SetAnswer(q.answers[2].text, q.answers[2].isCorrect);
+                    _answerController[3].SetAnswer(q.answers[3].text, q.answers[3].isCorrect);
                 }
             }
+            ql.questions.RemoveAt(questionToShow - 1);
         }
         
+        //Metodo per comunicare quante domande sono rimaste.
+        public int CountQuestions()
+        {
+            return ql.questions.Count;
+        }
+
         //Metodo per deserializzare una domanda
         private QuestionLevel QuestionDeserialize()
         {

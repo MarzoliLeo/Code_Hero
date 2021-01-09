@@ -36,19 +36,10 @@ namespace Leo.Scripts
         private void OnTriggerEnter2D(Collider2D other)
         {
             Destroy(other.gameObject);
+            //TODO settare la vita del player -1 se prende danni
             playerLifeSlider.value = 0;
-            LevelGameOver();
         }
         
-        //Funzione per gestire il Game Over del livello;
-        public void LevelGameOver()
-        {
-            isPlayerDead = true;
-            //Set del levelOrigin nel livello appena completato.
-            GameManager.Instance.LevelOriginIndex = GameManager.Instance.LevelDestinationIndex;
-            SceneManager.LoadScene(0);
-            
-            Debug.Log("Il player è morto: "+ isPlayerDead);
-        }
+
     }
 }
