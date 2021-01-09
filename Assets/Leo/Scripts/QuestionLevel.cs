@@ -7,12 +7,11 @@ namespace Leo.Scripts
     public class QuestionLevel
     {
         public List<Question> questions;
-        public int questionsToAnswers;
         
-        public QuestionLevel(List<Question> questions,int questionsToAnswers)
+        public QuestionLevel(List<Question> questions)
         {
             this.questions = questions;
-            this.questionsToAnswers = questionsToAnswers;
+           
         }
     }
 }

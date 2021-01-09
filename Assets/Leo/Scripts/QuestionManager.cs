@@ -5,6 +5,7 @@ using System.IO;
 using TMPro;
 using UnityEngine.Serialization;
 using  UnityEngine.UI;
+using Random = System.Random;
 
 namespace Leo.Scripts
 {
@@ -36,16 +37,24 @@ namespace Leo.Scripts
             
             QuestionLevel ql = QuestionDeserialize();
             
-            foreach (var question in ql.questions)
-            {
-                questionText.text = question.question;
-                
-                _answerController[0].SetAnswer(question.answers[0].text,question.answers[0].isCorrect);
-                _answerController[1].SetAnswer(question.answers[1].text,question.answers[1].isCorrect);
-                _answerController[2].SetAnswer(question.answers[2].text,question.answers[2].isCorrect);
-                _answerController[3].SetAnswer(question.answers[3].text,question.answers[3].isCorrect);
-            }
+            //TODO rimuovere questo foreach e generalizzare in modo che prende una question (random possibilmente) e la mostra.
             
+            Random randomIndex = new Random();
+            var questionToShow = randomIndex.Next(1,ql.questions.Count +1);
+            
+            //***********
+            foreach (var q in ql.questions)
+            {
+                if (questionToShow == q.number)
+                {
+                    questionText.text = q.question;
+                
+                    _answerController[0].SetAnswer(q.answers[0].text,q.answers[0].isCorrect);
+                    _answerController[1].SetAnswer(q.answers[1].text,q.answers[1].isCorrect);
+                    _answerController[2].SetAnswer(q.answers[2].text,q.answers[2].isCorrect);
+                    _answerController[3].SetAnswer(q.answers[3].text,q.answers[3].isCorrect);
+                }
+            }
         }
         
         //Metodo per deserializzare una domanda
