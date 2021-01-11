@@ -13,6 +13,7 @@ namespace Leo.Scripts
         //Variabili per associare lo "spawn" del projectile.
         public  GameObject originShooting;
         public  GameObject projectile;
+        public  ParticleSystem projectileEmitterPlayer;
         
         //OffSet
         private Vector3 offset = new Vector3(0.20f,0,0);
@@ -30,6 +31,8 @@ namespace Leo.Scripts
         {
             //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
             Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
+            //Fa partire l'emmiters
+            projectileEmitterPlayer.Play();
         }
         
         //Funzione per far gestire la morte del player.

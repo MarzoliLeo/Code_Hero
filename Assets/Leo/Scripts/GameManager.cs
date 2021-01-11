@@ -105,7 +105,7 @@ namespace Leo.Scripts
             LevelOriginIndex = LevelDestinationIndex;
             //Incrementiamo la destinazione del player.
             LevelDestinationIndex++;
-            SceneManager.LoadScene(0);
+            Invoke("LoadNextScene",0.5f);
         
             //Debug.Log("L'enemy è morto: "+isEnemyDead);
         }
@@ -116,9 +116,14 @@ namespace Leo.Scripts
             //TODO isPlayerDead = true;
             //Set del levelOrigin nel livello appena completato.
             LevelOriginIndex = LevelDestinationIndex;
-            SceneManager.LoadScene(0);
+            Invoke("LoadNextScene",0.5f);
             
             //Debug.Log("Il player è morto: "+ isPlayerDead);
+        }
+
+        private void LoadNextScene()
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }

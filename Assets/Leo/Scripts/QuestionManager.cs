@@ -47,7 +47,7 @@ namespace Leo.Scripts
         {
             Random randomIndex = new Random();
             int  questionToShow = randomIndex.Next(1, ql.questions.Count + 1);
-
+            
             foreach (var q in ql.questions)
             {
                 if (questionToShow == q.number)
@@ -60,7 +60,13 @@ namespace Leo.Scripts
                     _answerController[3].SetAnswer(q.answers[3].text, q.answers[3].isCorrect);
                 }
             }
+            //Rimozione della domanda dalla lista, così che non possa essere duplicata.
             ql.questions.RemoveAt(questionToShow - 1);
+            
+            //TODO Controllare che se la prima domanda viene presa la lista si riordina correttamente.
+            
+            //Reset del timer
+            FindObjectOfType<TimerCountdown>().timeToAnswer.value = 10;
         }
         
         //Metodo per comunicare quante domande sono rimaste.
