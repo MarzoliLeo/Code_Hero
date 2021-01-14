@@ -1,7 +1,6 @@
 {
     "questions": [
         {
-            "number": 1,
             "question": "La funzione Random.Next(0,5) puo' restituire",
             "answers": [
                 {
@@ -13,17 +12,16 @@
                     "isCorrect": false
                 },
                 {
-                    "text": "5",
-                    "isCorrect": false
-                },
-                {
                     "text": "0",
                     "isCorrect": true
+                },
+                {
+                    "text": "5",
+                    "isCorrect": false
                 }
             ]
         },
         {
-            "number": 2,
             "question": "Quali di questi identificatori non e' di C#",
             "answers": [
                 {

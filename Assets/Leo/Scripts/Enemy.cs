@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class EnemyManager : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     //Healthbar dell'enemy.
     public Slider enemyLifeSlider;

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace Leo.Scripts
 {
-    public class PlayerManager : MonoBehaviour
+    public class Player : MonoBehaviour
     {
         //Healthbar del player.
         public Slider playerLifeSlider;

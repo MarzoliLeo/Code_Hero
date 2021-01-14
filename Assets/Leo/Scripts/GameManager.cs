@@ -13,8 +13,8 @@ namespace Leo.Scripts
         private int _levelOriginIndex;
         
         //Riferimento ai player ed enemy del Livello.(1)
-        private PlayerManager _playerManagerRef;
-        private EnemyManager _enemyManagerRef;
+        private Player _playerRef;
+        private Enemy _enemyRef;
         
         //Riferimento al QuestioManager
         private QuestionManager _questionManager;
@@ -66,12 +66,12 @@ namespace Leo.Scripts
             if (value)
             {
                 //Il player spara all'enemy
-                _playerManagerRef.ShotToEnemy();
+                _playerRef.ShotToEnemy();
             }
             else
             {
                 //L'enemy spara al player
-                _enemyManagerRef.ShotToPlayer();
+                _enemyRef.ShotToPlayer();
             }
             
             // Controlla se ci sono ancora domande nel QuestioManager(QuestioLevel)
@@ -91,8 +91,8 @@ namespace Leo.Scripts
         private void OnSceneLoaded(Scene scene,LoadSceneMode mode)
         {
             Debug.Log("Scena: " + scene.name);
-            _playerManagerRef = FindObjectOfType<PlayerManager>();
-            _enemyManagerRef = FindObjectOfType<EnemyManager>();
+            _playerRef = FindObjectOfType<Player>();
+            _enemyRef = FindObjectOfType<Enemy>();
             _questionManager = FindObjectOfType<QuestionManager>();
         }
         
@@ -105,7 +105,7 @@ namespace Leo.Scripts
             LevelOriginIndex = LevelDestinationIndex;
             //Incrementiamo la destinazione del player.
             LevelDestinationIndex++;
-            Invoke("LoadNextScene",0.5f);
+            Invoke("LoadNextScene",0.6f);
         
             //Debug.Log("L'enemy è morto: "+isEnemyDead);
         }
@@ -116,7 +116,7 @@ namespace Leo.Scripts
             //TODO isPlayerDead = true;
             //Set del levelOrigin nel livello appena completato.
             LevelOriginIndex = LevelDestinationIndex;
-            Invoke("LoadNextScene",0.5f);
+            Invoke("LoadNextScene",0.6f);
             
             //Debug.Log("Il player è morto: "+ isPlayerDead);
         }
