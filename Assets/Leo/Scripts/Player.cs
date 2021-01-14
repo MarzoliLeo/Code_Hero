@@ -31,7 +31,7 @@ namespace Leo.Scripts
         {
             //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
             Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
-            //Fa partire l'emmiters
+            //Fa partire l'emmiters (particle system)
             projectileEmitterPlayer.Play();
         }
         
@@ -40,7 +40,7 @@ namespace Leo.Scripts
         {
             Destroy(other.gameObject);
             //TODO settare la vita del player -1 se prende danni
-            playerLifeSlider.value = 0;
+            playerLifeSlider.value -= other.GetComponent<ProjectileEnemy>().Damage;
         }
         
 

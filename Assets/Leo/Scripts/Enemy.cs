@@ -33,6 +33,7 @@ public class Enemy : MonoBehaviour
     {
         //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
         Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
+        //Fa partire l'emmiters (particle system)
         projectileEmitterEnemy.Play();
     }
 
