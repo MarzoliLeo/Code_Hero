@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEditor.Experimental.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,6 +9,9 @@ namespace Leo.Scripts
 {
     public class GameManager : Singleton<GameManager>
     {
+        //Start Combat Music
+        public AudioSource _startFightAudio;
+        
         //
         private int _levelDestinationIndex;
         private int _levelOriginIndex;
@@ -94,6 +98,26 @@ namespace Leo.Scripts
             _playerRef = FindObjectOfType<Player>();
             _enemyRef = FindObjectOfType<Enemy>();
             _questionManager = FindObjectOfType<QuestionManager>();
+            
+            //Controlla che non venga fatta nessuna inizializzazione nel menù
+            if (scene.buildIndex != 0)
+            {    
+                //Start the audio
+                _startFightAudio.Play();
+                
+                //Setta la vita del player in base al livello.
+                _playerRef.health = LevelOriginIndex;
+            
+                _playerRef.playerLifeSlider.maxValue += _playerRef.health ;
+                _playerRef.playerLifeSlider.value = _playerRef.playerLifeSlider.maxValue;
+            
+                //Setta la vita dell'enemy in base al livello.
+                _enemyRef.health = LevelOriginIndex;
+            
+                _enemyRef.enemyLifeSlider.maxValue += _enemyRef.health ;
+                _enemyRef.enemyLifeSlider.value = _enemyRef.enemyLifeSlider.maxValue;
+            }
+
         }
         
         

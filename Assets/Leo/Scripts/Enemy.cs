@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
+    //Vita da settare
+    public int health;
     //Healthbar dell'enemy.
     public Slider enemyLifeSlider;
 
@@ -41,8 +43,8 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(other.gameObject);
-        //TODO settare la vita -1
-        enemyLifeSlider.value = 0;
+        // Settare la vita del player -1 se prende danni
+        enemyLifeSlider.value -= other.GetComponent<ProjectilePlayer>().Damage;
     }
 
 

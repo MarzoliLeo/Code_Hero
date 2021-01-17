@@ -301,6 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588a0b81f5a2ae244b96eec22618aa60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
   playerLifeSlider: {fileID: 1607855499}
   originShooting: {fileID: 155536546}
   projectile: {fileID: 999640197893964420, guid: 001cdbbe858f91c4db18c87458013c43, type: 3}
@@ -2693,9 +2694,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 1
   m_MinValue: 0
-  m_MaxValue: 3
+  m_MaxValue: 1
   m_WholeNumbers: 1
-  m_Value: 3
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3386,9 +3387,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 2
+  m_MaxValue: 1
   m_WholeNumbers: 1
-  m_Value: 2
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

@@ -11,6 +11,13 @@ namespace Leo.Scripts
         
         //Velocità del projectile nel sparare
         private int projectileSpeed = 10;
+        private int damage = 1;
+
+        public int Damage
+        {
+            get => damage;
+            set => damage = value;
+        }
 
         // Start is called before the first frame update
         void Start()

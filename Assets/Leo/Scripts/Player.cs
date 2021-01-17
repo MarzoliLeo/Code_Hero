@@ -7,6 +7,8 @@ namespace Leo.Scripts
 {
     public class Player : MonoBehaviour
     {
+        //Vita da settare
+        public int health;
         //Healthbar del player.
         public Slider playerLifeSlider;
         
@@ -39,7 +41,7 @@ namespace Leo.Scripts
         private void OnTriggerEnter2D(Collider2D other)
         {
             Destroy(other.gameObject);
-            //TODO settare la vita del player -1 se prende danni
+            // Settare la vita del player -1 se prende danni
             playerLifeSlider.value -= other.GetComponent<ProjectileEnemy>().Damage;
         }
         
