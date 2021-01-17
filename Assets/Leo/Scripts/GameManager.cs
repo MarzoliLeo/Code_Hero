@@ -9,8 +9,10 @@ namespace Leo.Scripts
 {
     public class GameManager : Singleton<GameManager>
     {
+
+        
         //Start Combat Music
-        public AudioSource _startFightAudio;
+        private SoundManager _soundManager;
         
         //
         private int _levelDestinationIndex;
@@ -94,17 +96,17 @@ namespace Leo.Scripts
         //Evento del SceneManager interno.
         private void OnSceneLoaded(Scene scene,LoadSceneMode mode)
         {
-            Debug.Log("Scena: " + scene.name);
-            _playerRef = FindObjectOfType<Player>();
-            _enemyRef = FindObjectOfType<Enemy>();
-            _questionManager = FindObjectOfType<QuestionManager>();
-            
             //Controlla che non venga fatta nessuna inizializzazione nel menù
             if (scene.buildIndex != 0)
-            {    
-                //Start the audio
-                _startFightAudio.Play();
+            {
+                Debug.Log("Scena: " + scene.name);
+                _playerRef = FindObjectOfType<Player>();
+                _enemyRef = FindObjectOfType<Enemy>();
+                _soundManager = FindObjectOfType<SoundManager>();
+                _questionManager = FindObjectOfType<QuestionManager>();
+
                 
+                _soundManager.PlayFightSound();
                 //Setta la vita del player in base al livello.
                 _playerRef.health = LevelOriginIndex;
             
@@ -116,6 +118,12 @@ namespace Leo.Scripts
             
                 _enemyRef.enemyLifeSlider.maxValue += _enemyRef.health ;
                 _enemyRef.enemyLifeSlider.value = _enemyRef.enemyLifeSlider.maxValue;
+                
+
+            }
+            else
+            {
+               // _soundManager.StopFightSound();
             }
 
         }
