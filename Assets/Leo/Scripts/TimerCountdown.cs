@@ -11,17 +11,6 @@ public class TimerCountdown : MonoBehaviour
     public Slider timeToAnswer;
     public GameObject timeRemaining;
 
-    //Collegamento all'evento;
-    private void OnEnable()
-    {
-        LevelManager.onStartClick += Update;
-    }
-
-    private void OnDisable()
-    {
-        LevelManager.onStartClick -= Update;
-    }
-    
     private void Update()
     {
         timeToAnswer.value -= Time.deltaTime;
@@ -34,6 +23,10 @@ public class TimerCountdown : MonoBehaviour
         else if (timeToAnswer.value < 3)
         {
             timeRemaining.GetComponent<Image>().color = Color.red;
+        }
+        else
+        {
+            timeRemaining.GetComponent<Image>().color = Color.green;
         }
         
         if (timeToAnswer.value < Mathf.Epsilon)

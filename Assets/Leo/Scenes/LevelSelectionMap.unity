@@ -505,8 +505,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1586466800}
-        m_TargetAssemblyTypeName: Leo.Scripts.LoadLevel, Assembly-CSharp
-        m_MethodName: LoadIndexLevel
+        m_TargetAssemblyTypeName: Leo.Scripts.LevelManager, Assembly-CSharp
+        m_MethodName: LoadTransition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

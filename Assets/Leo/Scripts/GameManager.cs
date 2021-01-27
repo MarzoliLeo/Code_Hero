@@ -97,7 +97,7 @@ namespace Leo.Scripts
         private void OnSceneLoaded(Scene scene,LoadSceneMode mode)
         {
             //Controlla che non venga fatta nessuna inizializzazione nel menù
-            if (scene.buildIndex != 0)
+            if (scene.buildIndex != 0 || scene.buildIndex != 4)
             {
                 Debug.Log("Scena: " + scene.name);
                 _playerRef = FindObjectOfType<Player>();

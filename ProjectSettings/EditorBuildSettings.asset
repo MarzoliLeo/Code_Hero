@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Leo/Scenes/Level3.unity
     guid: 45f863cbd1d252a41b72e65a63048e56
+  - enabled: 1
+    path: Assets/Leo/Scenes/LoadingTransition.unity
+    guid: a75b40f584a1ba84d94e2efdc379ca2f
   m_configObjects: {}
