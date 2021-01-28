@@ -24,12 +24,6 @@ public class Enemy : MonoBehaviour
     //Bool per verificare se il nemico è morto (Victory).
     public bool isEnemyDead;
 
-    public bool IsEnemyDead
-    {
-        get => isEnemyDead;
-        set => isEnemyDead = value;
-    }
-
     //Funzione per gestire lo shooting del nemico.
     public  void ShotToPlayer()
     {
@@ -45,8 +39,9 @@ public class Enemy : MonoBehaviour
         Destroy(other.gameObject);
         // Settare la vita del player -1 se prende danni
         enemyLifeSlider.value -= other.GetComponent<ProjectilePlayer>().Damage;
+        if (enemyLifeSlider.value == 0)
+        {
+            isEnemyDead = true;
+        }
     }
-
-
-    
 }

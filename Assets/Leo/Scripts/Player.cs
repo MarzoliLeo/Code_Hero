@@ -23,11 +23,6 @@ namespace Leo.Scripts
         //Bool per verificare se il player è morto(Game Over).
         public bool isPlayerDead;
 
-        public bool IsPlayerDead
-        {
-            get => isPlayerDead;
-        }
-        
         //Funzione per gestire lo shooting del player.
         public  void ShotToEnemy()
         {
@@ -43,8 +38,10 @@ namespace Leo.Scripts
             Destroy(other.gameObject);
             // Settare la vita del player -1 se prende danni
             playerLifeSlider.value -= other.GetComponent<ProjectileEnemy>().Damage;
+            if (playerLifeSlider.value == 0)
+            {
+                isPlayerDead = true;
+            }
         }
-        
-
     }
 }

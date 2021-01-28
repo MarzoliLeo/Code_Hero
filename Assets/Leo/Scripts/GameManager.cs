@@ -112,12 +112,13 @@ namespace Leo.Scripts
             
                 _playerRef.playerLifeSlider.maxValue += _playerRef.health ;
                 _playerRef.playerLifeSlider.value = _playerRef.playerLifeSlider.maxValue;
-            
+                Debug.Log("Vita aumentata player!!!!");
                 //Setta la vita dell'enemy in base al livello.
                 _enemyRef.health = LevelOriginIndex;
             
                 _enemyRef.enemyLifeSlider.maxValue += _enemyRef.health ;
                 _enemyRef.enemyLifeSlider.value = _enemyRef.enemyLifeSlider.maxValue;
+                Debug.Log("Vita aumentata enemy!!!!");
                 
 
             }
@@ -137,7 +138,7 @@ namespace Leo.Scripts
             LevelOriginIndex = LevelDestinationIndex;
             //Incrementiamo la destinazione del player.
             LevelDestinationIndex++;
-            Invoke("LoadNextScene",0.6f);
+            Invoke("LoadNextScene",5/*0.6f*/);
         
             //Debug.Log("L'enemy è morto: "+isEnemyDead);
         }
@@ -148,7 +149,7 @@ namespace Leo.Scripts
             //TODO isPlayerDead = true;
             //Set del levelOrigin nel livello appena completato.
             LevelOriginIndex = LevelDestinationIndex;
-            Invoke("LoadNextScene",0.6f);
+            Invoke("LoadNextScene",5/*0.6f*/);
             
             //Debug.Log("Il player è morto: "+ isPlayerDead);
         }
