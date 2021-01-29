@@ -19,4 +19,5 @@ public class Transition : MonoBehaviour
     {
         SceneManager.LoadScene(GameManager.Instance.DestinationWaypoint.levelIndex);
     }
+    
 }

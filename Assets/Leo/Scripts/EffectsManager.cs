@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Leo.Scripts
 {
@@ -7,6 +8,7 @@ namespace Leo.Scripts
         public GameObject canvasOfBoxQuestion;
         public GameObject victoryText;
         public GameObject gameOverText;
+        public GameObject canvasSliderTimer;
 
         private Player _playerRef;
         private Enemy _enemyRef;
@@ -17,6 +19,7 @@ namespace Leo.Scripts
             _enemyRef = FindObjectOfType<Enemy>();
             
             canvasOfBoxQuestion.SetActive(true);
+            canvasSliderTimer.SetActive(true);
             victoryText.SetActive(false);
             gameOverText.SetActive(false);
         }
@@ -25,20 +28,32 @@ namespace Leo.Scripts
         {
             if (_enemyRef.isEnemyDead)
             {
-                HideBoxQuestion();
+                HideBoxQuestionAndTimer();
                 ShowVictoryText();
+                
+                //Torna al levelSelectionMap
+                Invoke("LoadLevelSelectionMap",5);
             }
             if (_playerRef.isPlayerDead)
             {
-                HideBoxQuestion();
+                HideBoxQuestionAndTimer();
                 ShowGameOverText();
+                
+                //Torna al levelSelectionMap
+                Invoke("LoadLevelSelectionMap",5);
             }
+        }
+        
+        public void LoadLevelSelectionMap()
+        {
+            SceneManager.LoadScene(0);
         }
 
         //Metodo per nascondere il box delle domande con le risposte.
-        public void HideBoxQuestion()
+        public void HideBoxQuestionAndTimer()
         {
             canvasOfBoxQuestion.SetActive(false);
+            canvasSliderTimer.SetActive(false);
         }
     
         //Metodo per mostrare il testo di vittoria, se si vince.
