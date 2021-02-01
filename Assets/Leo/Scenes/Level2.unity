@@ -230,6 +230,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2163817682254343009, guid: ba10f54d17a47974ab1c5123ff88fcb9, type: 3}
   m_PrefabInstance: {fileID: 13677517}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &13677520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8464189502799331505, guid: ba10f54d17a47974ab1c5123ff88fcb9, type: 3}
+  m_PrefabInstance: {fileID: 13677517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &50904090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,6 +2208,10 @@ PrefabInstance:
       propertyPath: canvasOfBoxQuestion
       value: 
       objectReference: {fileID: 2070734096}
+    - target: {fileID: 8496264010729214404, guid: 28d32df2f36941c428205c861974c9f1, type: 3}
+      propertyPath: drawText
+      value: 
+      objectReference: {fileID: 13677520}
     - target: {fileID: 8496264010729214405, guid: 28d32df2f36941c428205c861974c9f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
