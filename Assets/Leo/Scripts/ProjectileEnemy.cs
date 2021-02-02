@@ -8,7 +8,7 @@ public class ProjectileEnemy : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
         
     //Velocità del projectile nel sparare
-    private int projectileSpeed = 5;
+    private int projectileSpeed = 9;
     private int damage = 1;
 
     public int Damage

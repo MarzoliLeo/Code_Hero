@@ -38,8 +38,10 @@ public class Enemy : MonoBehaviour
     {
         Destroy(other.gameObject);
         // Settare la vita del player -1 se prende danni
-        enemyLifeSlider.value -= other.GetComponent<ProjectilePlayer>().Damage;
-        if (enemyLifeSlider.value == 0)
+        var damage =  other.GetComponent<ProjectilePlayer>().Damage;
+        health -= damage;
+        enemyLifeSlider.value -= damage;
+        if (health == 0)
         {
             isEnemyDead = true;
         }

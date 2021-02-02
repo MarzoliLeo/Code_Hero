@@ -37,8 +37,10 @@ namespace Leo.Scripts
         {
             Destroy(other.gameObject);
             // Settare la vita del player -1 se prende danni
-            playerLifeSlider.value -= other.GetComponent<ProjectileEnemy>().Damage;
-            if (playerLifeSlider.value == 0)
+            var damage = other.GetComponent<ProjectileEnemy>().Damage;
+            health -= damage;
+            playerLifeSlider.value -= damage;
+            if (health == 0)
             {
                 isPlayerDead = true;
             }

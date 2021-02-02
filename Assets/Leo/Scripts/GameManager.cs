@@ -9,7 +9,7 @@ namespace Leo.Scripts
 {
     public class GameManager : Singleton<GameManager>
     {
-
+        private const float timeToWait = 0.7f;
         
         //Start Combat Music
         private SoundManager _soundManager;
@@ -18,8 +18,6 @@ namespace Leo.Scripts
         private int _levelDestinationIndex;
         private int _levelOriginIndex;
         
-        //
-        private bool _drawMode;
         
         //Riferimento ai player ed enemy del Livello.(1)
         private Player _playerRef;
@@ -89,21 +87,14 @@ namespace Leo.Scripts
             // Controlla se ci sono ancora domande nel QuestioManager(QuestioLevel)
             if (_questionManager.CountQuestions() == 0)
             {
+                //StartCoroutine(EvaluateLevelDraw());
                 //TODO Sistemare il draw Sistem.
                 //Todo problema: entra sempre nel draw perchè il proiettile non ha il tempo di portare la vita a 0 del player o dell'enemy,
                 //perciò entra sempre in LevelDraw();
-                if (_enemyRef.isEnemyDead)
-                {
-                    LevelVictory();
-                }
-                else if (_playerRef.isPlayerDead)
-                {
-                    LevelGameOver();
-                }
-                else
-                {
-                    LevelDraw();
-                }
+                StartCoroutine(LevelVictory());
+                StartCoroutine(LevelGameOver());
+
+
             }
             else
             {
@@ -149,8 +140,11 @@ namespace Leo.Scripts
         
         
         //Funzione per gestire la vittoria del livello;
-        private void LevelVictory()
+        IEnumerator LevelVictory()
         {
+            yield return new WaitForSeconds(timeToWait);
+            if (_enemyRef.isEnemyDead)
+            {
 
                 _effectsManager.HideBoxQuestionAndTimer();
                 _effectsManager.ShowVictoryText();
@@ -158,32 +152,39 @@ namespace Leo.Scripts
                 LevelOriginIndex = LevelDestinationIndex;
                 //Incrementiamo la destinazione del player.
                 LevelDestinationIndex++;
-                Invoke("LoadLevelSelectionMap",5/*0.6f*/);
-                
+                Invoke("LoadLevelSelectionMap", 5 /*0.6f*/);
+
                 Debug.Log("Sono Dentro LevelVictory");
-            
+            }
         }
         
         //Funzione per gestire il Game Over del livello;
-        private void LevelGameOver()
+        IEnumerator LevelGameOver()
         {
+            yield return new WaitForSeconds(timeToWait);
+            if (_playerRef.isPlayerDead)
+            {
 
                 _effectsManager.HideBoxQuestionAndTimer();
                 _effectsManager.ShowGameOverText();
                 //Set del levelOrigin nel livello appena raggiunto(ritentare).
                 LevelOriginIndex = LevelDestinationIndex;
-                Invoke("LoadLevelSelectionMap",5/*0.6f*/);
-                
+                //Todo fare una variabile per il time.
+                Invoke("LoadLevelSelectionMap", 5 /*0.6f*/);
+
                 Debug.Log("Sono Dentro GameOver");
+            }
         }
         
         //Funzione per gestire lo stato di Draw nel caso in cui l'enemy o il player non muoiano.
-        private void LevelDraw()
+        IEnumerator LevelDraw()
         {
+            yield return new WaitForSeconds(timeToWait);
             _effectsManager.HideBoxQuestionAndTimer();
             _effectsManager.ShowDrawText();
             //Set del levelOrigin nel livello appena raggiunto(ritentare).
             LevelOriginIndex = LevelDestinationIndex;
+            //Todo fare una variabile per il time.
             Invoke("LoadLevelSelectionMap",5/*0.6f*/);
             
             Debug.Log("Sono Dentro Draw");
