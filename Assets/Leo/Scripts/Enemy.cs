@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     public  GameObject originShooting;
     public  GameObject projectile;
     public  ParticleSystem projectileEmitterEnemy;
+    public ParticleSystem takingDamageEmitterEnemy;
     
     //OffSet
     private Vector3 offset = new Vector3(-0.20f,0,0);
@@ -37,13 +38,17 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(other.gameObject);
+        //Mostra i cuori se prendi danno.
+        takingDamageEmitterEnemy.Play();
         // Settare la vita del player -1 se prende danni
         var damage =  other.GetComponent<ProjectilePlayer>().Damage;
         health -= damage;
         enemyLifeSlider.value -= damage;
+        
         if (health == 0)
         {
             isEnemyDead = true;
+            
         }
     }
 }

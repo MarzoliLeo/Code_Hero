@@ -201,6 +201,10 @@ namespace Leo.Scripts
             
                 Debug.Log("Sono Dentro Draw");
             }
+            else
+            {
+                yield break;
+            }
 
         }
 

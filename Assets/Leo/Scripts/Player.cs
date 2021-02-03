@@ -16,6 +16,7 @@ namespace Leo.Scripts
         public  GameObject originShooting;
         public  GameObject projectile;
         public  ParticleSystem projectileEmitterPlayer;
+        public ParticleSystem takingDamageEmitterPlayer;
         
         //OffSet
         private Vector3 offset = new Vector3(0.20f,0,0);
@@ -36,6 +37,8 @@ namespace Leo.Scripts
         private void OnTriggerEnter2D(Collider2D other)
         {
             Destroy(other.gameObject);
+            //Mostra i cuori se prendi danno.
+            takingDamageEmitterPlayer.Play();
             // Settare la vita del player -1 se prende danni
             var damage = other.GetComponent<ProjectileEnemy>().Damage;
             health -= damage;
