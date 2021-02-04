@@ -9,7 +9,7 @@ namespace Leo.Scripts
 {
     public class GameManager : Singleton<GameManager>
     {
-        private bool _drawModeOn;
+        private bool _drawMode = false;
         private const float timeToWait = 0.7f;
         
         //Start Combat Music
@@ -94,7 +94,6 @@ namespace Leo.Scripts
                 //perciò entra sempre in LevelDraw();
                 StartCoroutine(LevelVictory());
                 StartCoroutine(LevelGameOver());
-                StartCoroutine(LevelDraw());
 
 
             }
@@ -147,7 +146,7 @@ namespace Leo.Scripts
             yield return new WaitForSeconds(timeToWait);
             if (_enemyRef.isEnemyDead)
             {
-                _drawModeOn = false;
+                _drawMode = false;
                 _effectsManager.HideBoxQuestionAndTimer();
                 _effectsManager.ShowVictoryText();
                 //Set del levelOrigin nel livello appena completato.
@@ -155,58 +154,30 @@ namespace Leo.Scripts
                 //Incrementiamo la destinazione del player.
                 LevelDestinationIndex++;
                 Invoke("LoadLevelSelectionMap", 5 /*0.6f*/);
-
-                Debug.Log("Sono Dentro LevelVictory");
             }
             else
             {
-                _drawModeOn = true;
+                _drawMode = true;
             }
         }
         
         //Funzione per gestire il Game Over del livello;
         IEnumerator LevelGameOver()
         {
-            yield return new WaitForSeconds(timeToWait);
-            if (_playerRef.isPlayerDead)
+            yield return new WaitForSeconds(timeToWait + 0.05f);
+            if (_playerRef.isPlayerDead || _drawMode)
             {
-                _drawModeOn = false;
+                //_drawModeOn = false;
                 _effectsManager.HideBoxQuestionAndTimer();
                 _effectsManager.ShowGameOverText();
                 //Set del levelOrigin nel livello appena raggiunto(ritentare).
                 LevelOriginIndex = LevelDestinationIndex;
                 //Todo fare una variabile per il time.
                 Invoke("LoadLevelSelectionMap", 5 /*0.6f*/);
-
-                Debug.Log("Sono Dentro GameOver");
-            }
-            else
-            {
-                _drawModeOn = true;
+                
             }
         }
         
-        //Funzione per gestire lo stato di Draw nel caso in cui l'enemy o il player non muoiano.
-        IEnumerator LevelDraw()
-        {
-            yield return new WaitForSeconds(1);
-            if (_drawModeOn)
-            {
-                _effectsManager.HideBoxQuestionAndTimer();
-                _effectsManager.ShowDrawText();
-                //Set del levelOrigin nel livello appena raggiunto(ritentare).
-                LevelOriginIndex = LevelDestinationIndex;
-                //Todo fare una variabile per il time.
-                Invoke("LoadLevelSelectionMap",5/*0.6f*/);
-            
-                Debug.Log("Sono Dentro Draw");
-            }
-            else
-            {
-                yield break;
-            }
-
-        }
 
         public void LoadLevelSelectionMap()
         {
