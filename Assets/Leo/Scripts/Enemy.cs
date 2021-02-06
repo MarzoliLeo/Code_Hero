@@ -24,12 +24,16 @@ public class Enemy : MonoBehaviour
     
     //Bool per verificare se il nemico è morto (Victory).
     public bool isEnemyDead;
+    
+    //Variabile per riprodurre uno shooting sound.
+    public AudioClip shootingSound;
 
     //Funzione per gestire lo shooting del nemico.
     public  void ShotToPlayer()
     {
         //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
         Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(shootingSound,originShooting.transform.position,1);
         //Fa partire l'emmiters (particle system)
         projectileEmitterEnemy.Play();
     }

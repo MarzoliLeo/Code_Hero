@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public  AudioSource _audioSource;
+    public AudioSource _audioSource;
 
     //metodo per far partire la musica.
     public void PlayFightSound()

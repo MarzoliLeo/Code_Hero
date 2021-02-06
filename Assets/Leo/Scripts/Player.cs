@@ -23,12 +23,17 @@ namespace Leo.Scripts
         
         //Bool per verificare se il player è morto(Game Over).
         public bool isPlayerDead;
+        
+        //Variabile per riprodurre uno shooting sound.
+        public AudioClip shootingSound;
 
         //Funzione per gestire lo shooting del player.
         public  void ShotToEnemy()
         {
             //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
             Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
+            //Riproduzione del sound
+            AudioSource.PlayClipAtPoint(shootingSound,originShooting.transform.position,1);
             //Fa partire l'emmiters (particle system)
             projectileEmitterPlayer.Play();
         }

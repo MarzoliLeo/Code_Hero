@@ -153,7 +153,8 @@ namespace Leo.Scripts
                 LevelOriginIndex = LevelDestinationIndex;
                 //Incrementiamo la destinazione del player.
                 LevelDestinationIndex++;
-                Invoke("LoadLevelSelectionMap", 5 /*0.6f*/);
+                Invoke("LoadLevelSelectionMap",5);
+
             }
             else
             {
@@ -167,17 +168,15 @@ namespace Leo.Scripts
             yield return new WaitForSeconds(timeToWait + 0.05f);
             if (_playerRef.isPlayerDead || _drawMode)
             {
-                //_drawModeOn = false;
                 _effectsManager.HideBoxQuestionAndTimer();
                 _effectsManager.ShowGameOverText();
                 //Set del levelOrigin nel livello appena raggiunto(ritentare).
                 LevelOriginIndex = LevelDestinationIndex;
                 //Todo fare una variabile per il time.
-                Invoke("LoadLevelSelectionMap", 5 /*0.6f*/);
-                
+                Invoke("LoadLevelSelectionMap",5);
+
             }
         }
-        
 
         public void LoadLevelSelectionMap()
         {
