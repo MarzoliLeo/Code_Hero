@@ -25,19 +25,19 @@
             "question": "Quali di questi identificatori non e' di C#",
             "answers": [
                 {
-                    "text": "public",
+                    "text": "Public",
                     "isCorrect": false
                 },
                 {
-                    "text": "private",
+                    "text": "Private",
                     "isCorrect": false
                 },
                 {
-                    "text": "protected",
+                    "text": "Protected",
                     "isCorrect": false
                 },
                 {
-                    "text": "guardian",
+                    "text": "Guardian",
                     "isCorrect": true
                 }
             ]

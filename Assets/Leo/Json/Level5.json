@@ -1,0 +1,110 @@
+{
+    "questions": [
+        {
+            "question": "Un'attributo definito come Readonly e' detto?",
+            "answers": [
+                {
+                    "text": "Class invariant",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Istance invariant",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Class attributes",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Istance variant",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Se omettiamo la parte di SET in una Property otteniamo un?",
+            "answers": [
+                {
+                    "text": "Read-only",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Metodo",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Write-Only",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Costruttore",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Cosa non e' una componente principale dell' UML?",
+            "answers": [
+                {
+                    "text": "Oggetti",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Relazioni",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Diagrammi",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Riferimenti",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "question": "Nel diagramma delle classi quali di questi segni non altera la visibilita'?",
+            "answers": [
+                {
+                    "text": "+",
+                    "isCorrect": false
+                },
+                {
+                    "text": "-",
+                    "isCorrect": false
+                },
+                {
+                    "text": "#",
+                    "isCorrect": false
+                },
+                {
+                    "text": "/",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "question": "Nello Use Case Diagram quale di queste NON e' una relazione definita?",
+            "answers": [
+                {
+                    "text": "Aggregazione",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Inclusione",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Generalizzazione",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Estensione",
+                    "isCorrect": false
+                }
+            ]
+        }
+
+    ]
+}

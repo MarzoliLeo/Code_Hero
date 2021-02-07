@@ -1,0 +1,89 @@
+{
+    "questions": [
+        {
+            "question": "Una interfaccia che tipo di relazione stabilisce?",
+            "answers": [
+                {
+                    "text": "Has-a",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Is-a",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Is-like-a",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Has-like-a",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Quale NON e' un vantaggio del polimorfismo?",
+            "answers": [
+                {
+                    "text": "Riusabilita'",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Mantenibilita'",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Decentralizzazione",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ridondanza",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "question": "L'Overloading avviene in:",
+            "answers": [
+                {
+                    "text": "Early Binding",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Late Binding",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Lazy Binding",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Dynamic Binding",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "In che contesto parliamo di Upcasting?",
+            "answers": [
+                {
+                    "text": "Ereditarieta'",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Polimorfismo",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Encapsulation",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Information Hiding",
+                    "isCorrect": false
+                }
+            ]
+        }
+
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "questions": [
+        {
+            "question": "Come viene chiamato in altri modi il Late Binding?",
+            "answers": [
+                {
+                    "text": "Overriding B.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Dynamic B.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Static B.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Lazy B.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Se una classe derivata aggiunge dei metodi rispetto la classe base, si dice che:",
+            "answers": [
+                {
+                    "text": "Specializza",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Generalizza",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Informa",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Restituisce",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Quando si effettua l'ovverriding, il metodo deve essere definito come?",
+            "answers": [
+                {
+                    "text": "Abstract",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Derived",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Virtual",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Static",
+                    "isCorrect": false
+                }
+            ]
+        }
+
+    ]
+}

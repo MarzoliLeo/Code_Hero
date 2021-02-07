@@ -108,7 +108,7 @@ namespace Leo.Scripts
         private void OnSceneLoaded(Scene scene,LoadSceneMode mode)
         {
             //Controlla che non venga fatta nessuna inizializzazione nel menù
-            if (scene.buildIndex != 0 || scene.buildIndex != 4)
+            if (scene.buildIndex != 0 /*|| scene.buildIndex != TransitionScene*/)
             {
                 
                 _playerRef = FindObjectOfType<Player>();
