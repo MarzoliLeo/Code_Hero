@@ -1,12 +1,144 @@
 fileFormatVersion: 2
 guid: ab770a31304ce1e4ca4ee2b103e6e325
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8718164875578853515
+    second: RetroBossIdle 1_0
+  - first:
+      213: -9135201479331468409
+    second: RetroBossIdle 1_1
+  - first:
+      213: -2771464025748936367
+    second: RetroBossIdle 1_2
+  - first:
+      213: 3186185112502939792
+    second: RetroBossIdle 1_3
+  - first:
+      213: -5295938518414320361
+    second: RetroBossIdle 1_4
+  - first:
+      213: 4794766367500771388
+    second: RetroBossIdle 1_5
+  - first:
+      213: -4452829305177995735
+    second: RetroBossIdle 1_6
+  - first:
+      213: 4437127812361811115
+    second: RetroBossIdle 1_7
+  - first:
+      213: 7880884327667461065
+    second: RetroBossIdle 1_8
+  - first:
+      213: -1529773732497459853
+    second: RetroBossIdle 1_9
+  - first:
+      213: -6216396266457098163
+    second: RetroBossIdle 1_10
+  - first:
+      213: 8208225107482869034
+    second: RetroBossIdle 1_11
+  - first:
+      213: -6132439659748086120
+    second: RetroBossIdle 1_0
+  - first:
+      213: -9056037465269247256
+    second: RetroBossIdle 1_1
+  - first:
+      213: 3847832312754020394
+    second: RetroBossIdle 1_2
+  - first:
+      213: 2556894124839349263
+    second: RetroBossIdle 1_3
+  - first:
+      213: -1794186855296136366
+    second: RetroBossIdle 1_4
+  - first:
+      213: 8295348843026592712
+    second: RetroBossIdle 1_5
+  - first:
+      213: -8773192517853430037
+    second: RetroBossIdle 1_6
+  - first:
+      213: 4171983472807778514
+    second: RetroBossIdle 1_7
+  - first:
+      213: 3910593477993368519
+    second: RetroBossIdle 1_8
+  - first:
+      213: -4973850347479803091
+    second: RetroBossIdle 1_9
+  - first:
+      213: -4587379654488582181
+    second: RetroBossIdle 1_10
+  - first:
+      213: 4727996437031694784
+    second: RetroBossIdle 1_11
+  - first:
+      213: 631280301186112619
+    second: RetroBossIdle 1_12
+  - first:
+      213: 5690101643087183053
+    second: RetroBossIdle 1_13
+  - first:
+      213: -6263186316939922164
+    second: RetroBossIdle 1_14
+  - first:
+      213: 265867475250158697
+    second: RetroBossIdle 1_15
+  - first:
+      213: -5143254486649950617
+    second: RetroBossIdle 1_16
+  - first:
+      213: -4351236365845086562
+    second: RetroBossIdle 1_17
+  - first:
+      213: 5159825409165713123
+    second: RetroBossIdle 1_18
+  - first:
+      213: -2332069146385462099
+    second: RetroBossIdle 1_19
+  - first:
+      213: -1020873749878443301
+    second: RetroBossIdle 1_20
+  - first:
+      213: 234314954729510523
+    second: RetroBossIdle 1_21
+  - first:
+      213: -2091701696390650035
+    second: RetroBossIdle 1_22
+  - first:
+      213: -3516909844102866712
+    second: RetroBossIdle 1_23
+  - first:
+      213: 1242658247932016099
+    second: RetroBossIdle 1_24
+  - first:
+      213: 3119363044247229286
+    second: RetroBossIdle 1_25
+  - first:
+      213: -7091385476112642498
+    second: RetroBossIdle 1_26
+  - first:
+      213: -6295185628381053813
+    second: RetroBossIdle 1_27
+  - first:
+      213: -9075448946759461989
+    second: RetroBossIdle 1_28
+  - first:
+      213: 421981406821291982
+    second: RetroBossIdle 1_29
+  - first:
+      213: -4776843305493237833
+    second: RetroBossIdle 1_30
+  - first:
+      213: 746864008790992054
+    second: RetroBossIdle 1_31
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +167,13 @@ TextureImporter:
     filterMode: -1
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +182,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -121,13 +253,109 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RetroBossIdle 1_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 142
+        width: 64
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ea23ade9235eaa0800000000000000
+      internalID: -6132439659748086120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RetroBossIdle 1_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 141
+        width: 64
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e26ff108ed725280800000000000000
+      internalID: -9056037465269247256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RetroBossIdle 1_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 13
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2029fc0a1f366530800000000000000
+      internalID: 3847832312754020394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RetroBossIdle 1_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 16
+        width: 65
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c2557d8a9eb7320800000000000000
+      internalID: 2556894124839349263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 013ba905c2a3bab42a80f2594b65a88d
     internalID: 0
     vertices: []
     indices: 
