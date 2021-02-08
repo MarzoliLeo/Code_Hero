@@ -45,14 +45,18 @@ public class TimerCountdown : MonoBehaviour
         
         if (timeToAnswer.value < Mathf.Epsilon)
         {
-            //Gestisce il GameOver dovuto allo scadere del tempo.
+            if (!(GameManager.Instance.textPlaying))
+            {
+                //Gestisce il GameOver dovuto allo scadere del tempo.
             
-            _effectsManager.HideBoxQuestionAndTimer();
-            _effectsManager.ShowGameOverText();
-            //Set del levelOrigin nel livello appena raggiunto(ritentare).
-            GameManager.Instance.LevelOriginIndex = GameManager.Instance.LevelDestinationIndex;
-            //Ricarica il menù di selezione del livello, dopo un certo delay.
-            Invoke("LoadLevelSelectionMap",5);
+                _effectsManager.HideBoxQuestionAndTimer();
+                _effectsManager.ShowGameOverText();
+                //Set del levelOrigin nel livello appena raggiunto(ritentare).
+                GameManager.Instance.LevelOriginIndex = GameManager.Instance.LevelDestinationIndex;
+                //Ricarica il menù di selezione del livello, dopo un certo delay.
+                Invoke("LoadLevelSelectionMap",5);
+            }
+
         }
     }
     

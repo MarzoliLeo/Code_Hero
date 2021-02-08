@@ -9,6 +9,7 @@ namespace Leo.Scripts
 {
     public class GameManager : Singleton<GameManager>
     {
+        public bool textPlaying;
         private bool _drawMode = false;
         private const float timeToWait = 0.7f;
         
@@ -88,14 +89,8 @@ namespace Leo.Scripts
             // Controlla se ci sono ancora domande nel QuestioManager(QuestioLevel)
             if (_questionManager.CountQuestions() == 0)
             {
-                //StartCoroutine(EvaluateLevelDraw());
-                //TODO Sistemare il draw Sistem.
-                //Todo problema: entra sempre nel draw perchè il proiettile non ha il tempo di portare la vita a 0 del player o dell'enemy,
-                //perciò entra sempre in LevelDraw();
                 StartCoroutine(LevelVictory());
                 StartCoroutine(LevelGameOver());
-
-
             }
             else
             {
@@ -146,6 +141,7 @@ namespace Leo.Scripts
             yield return new WaitForSeconds(timeToWait);
             if (_enemyRef.isEnemyDead)
             {
+                textPlaying = true;
                 _drawMode = false;
                 _effectsManager.HideBoxQuestionAndTimer();
                 _effectsManager.ShowVictoryText();
@@ -168,6 +164,7 @@ namespace Leo.Scripts
             yield return new WaitForSeconds(timeToWait + 0.05f);
             if (_playerRef.isPlayerDead || _drawMode)
             {
+                textPlaying = true;
                 _effectsManager.HideBoxQuestionAndTimer();
                 _effectsManager.ShowGameOverText();
                 //Set del levelOrigin nel livello appena raggiunto(ritentare).
