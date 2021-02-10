@@ -84,12 +84,12 @@ namespace Leo.Scripts
             if (value)
             {
                 //Il player spara all'enemy
-                _playerRef.ShotToEnemy();
+                _playerRef.Shoot();
             }
             else
             {
                 //L'enemy spara al player
-                _enemyRef.ShotToPlayer();
+                _enemyRef.Shoot();
             }
             
             // Controlla se ci sono ancora domande nel QuestioManager(QuestioLevel)
@@ -120,14 +120,14 @@ namespace Leo.Scripts
                 //Setta la vita del player in base al livello.
                 _playerRef.health = DestinationWaypoint.levelIndex;
             
-                _playerRef.playerLifeSlider.maxValue = _playerRef.health ;
-                _playerRef.playerLifeSlider.value = _playerRef.playerLifeSlider.maxValue;
+                _playerRef.lifeSlider.maxValue = _playerRef.health ;
+                _playerRef.lifeSlider.value = _playerRef.lifeSlider.maxValue;
                 
                 //Setta la vita dell'enemy in base al livello.
                 _enemyRef.health = DestinationWaypoint.levelIndex;
             
-                _enemyRef.enemyLifeSlider.maxValue = _enemyRef.health ;
-                _enemyRef.enemyLifeSlider.value = _enemyRef.enemyLifeSlider.maxValue;
+                _enemyRef.lifeSlider.maxValue = _enemyRef.health ;
+                _enemyRef.lifeSlider.value = _enemyRef.lifeSlider.maxValue;
                 
             }
             else
@@ -142,7 +142,7 @@ namespace Leo.Scripts
         IEnumerator LevelVictory()
         {
             yield return new WaitForSeconds(timeToWait);
-            if (_enemyRef.isEnemyDead)
+            if (_enemyRef.isDead)
             {
                 textPlaying = true;
                 _drawMode = false;
@@ -165,7 +165,7 @@ namespace Leo.Scripts
         IEnumerator LevelGameOver()
         {
             yield return new WaitForSeconds(timeToWait + 0.05f);
-            if (_playerRef.isPlayerDead || _drawMode)
+            if (_playerRef.isDead || _drawMode)
             {
                 textPlaying = true;
                 _effectsManager.HideBoxQuestionAndTimer();
