@@ -18,6 +18,7 @@ public class Transition : MonoBehaviour
     private void LoadIndexLevel()
     {
         SceneManager.LoadScene(GameManager.Instance.DestinationWaypoint.levelIndex);
+        SoundManager.Instance.PlayFightSound();
     }
     
 }

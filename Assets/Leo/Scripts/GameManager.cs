@@ -9,7 +9,8 @@ namespace Leo.Scripts
 {
     public class GameManager : Singleton<GameManager>
     {
-        public bool textPlaying;
+        private bool textPlaying;
+
         private bool _drawMode = false;
         private const float timeToWait = 0.7f;
         
@@ -50,6 +51,11 @@ namespace Leo.Scripts
         {
             get => _levelDestinationIndex;
             set => _levelDestinationIndex = value;
+        }
+        
+        public bool TextPlaying
+        {
+            get => textPlaying;
         }
         
                 
@@ -108,12 +114,9 @@ namespace Leo.Scripts
                 
                 _playerRef = FindObjectOfType<Player>();
                 _enemyRef = FindObjectOfType<Enemy>();
-                _soundManager = FindObjectOfType<SoundManager>();
                 _questionManager = FindObjectOfType<QuestionManager>();
                 _effectsManager = FindObjectOfType<EffectsManager>();
 
-                
-                _soundManager.PlayFightSound();
                 //Setta la vita del player in base al livello.
                 _playerRef.health = DestinationWaypoint.levelIndex;
             
@@ -171,13 +174,19 @@ namespace Leo.Scripts
                 LevelOriginIndex = LevelDestinationIndex;
                 //Todo fare una variabile per il time.
                 Invoke("LoadLevelSelectionMap",5);
-
             }
         }
 
         public void LoadLevelSelectionMap()
         {
+            SoundManager.Instance.StopFightSound();
             SceneManager.LoadScene(0);
+        }
+        
+        //Metodo per caricare la transition nel caso in cui si prema lo Start Button.
+        public void LoadTransition()
+        {
+            SceneManager.LoadScene("LoadingTransition");
         }
     }
 }

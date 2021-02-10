@@ -5,11 +5,11 @@
             "answers": [
                 {
                     "text": "Class invariant",
-                    "isCorrect": true
+                    "isCorrect": false
                 },
                 {
                     "text": "Istance invariant",
-                    "isCorrect": false
+                    "isCorrect": true
                 },
                 {
                     "text": "Class attributes",
