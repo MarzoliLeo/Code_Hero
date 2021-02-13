@@ -11,12 +11,15 @@ namespace Leo.Scripts
         //Funzione per gestire lo shooting del player.
         public  override void Shoot()
         {
-            //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
-            Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
-            //Riproduzione del sound
-            AudioSource.PlayClipAtPoint(shootingSound,originShooting.transform.position,1);
-            //Fa partire l'emmiters (particle system)
-            projectileEmitter.Play();
+            if (canAttack)
+            {
+                //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
+                Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
+                //Riproduzione del sound
+                AudioSource.PlayClipAtPoint(shootingSound,originShooting.transform.position,1);
+                //Fa partire l'emmiters (particle system)
+                projectileEmitter.Play();
+            }
         }
         
         //Funzione per far gestire la morte del player.

@@ -415,12 +415,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  playerLifeSlider: {fileID: 1607855499}
+  lifeSlider: {fileID: 1607855499}
   originShooting: {fileID: 155536546}
   projectile: {fileID: 999640197893964420, guid: 001cdbbe858f91c4db18c87458013c43, type: 3}
-  projectileEmitterPlayer: {fileID: 730139167}
-  takingDamageEmitterPlayer: {fileID: 1898881859}
-  isPlayerDead: 0
+  projectileEmitter: {fileID: 730139167}
+  takingDamageEmitter: {fileID: 1898881859}
+  isDead: 0
+  canAttack: 0
   shootingSound: {fileID: 8300000, guid: e243d55f7381e83409e908581195bb87, type: 3}
 --- !u!212 &57545114
 SpriteRenderer:
@@ -3174,12 +3175,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  enemyLifeSlider: {fileID: 1128481344}
+  lifeSlider: {fileID: 1128481344}
   originShooting: {fileID: 674351122}
   projectile: {fileID: 3508157283057900756, guid: 998b61d444f1029469abe30917fab2ba, type: 3}
-  projectileEmitterEnemy: {fileID: 152844910}
-  takingDamageEmitterEnemy: {fileID: 1048949764}
-  isEnemyDead: 0
+  projectileEmitter: {fileID: 152844910}
+  takingDamageEmitter: {fileID: 1048949764}
+  isDead: 0
+  canAttack: 0
   shootingSound: {fileID: 8300000, guid: e243d55f7381e83409e908581195bb87, type: 3}
 --- !u!95 &1059880471
 Animator:

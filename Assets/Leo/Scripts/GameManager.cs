@@ -83,13 +83,17 @@ namespace Leo.Scripts
         {
             if (value)
             {
+                //Impostazione del booleano ereditato dalla classe base.
+                _playerRef.canAttack = true;
                 //Il player spara all'enemy
-                _playerRef.Shoot();
+                //_playerRef.Shoot();
             }
             else
             {
+                //Impostazione del booleano ereditato dalla classe base.
+                _enemyRef.canAttack = true;
                 //L'enemy spara al player
-                _enemyRef.Shoot();
+                //_enemyRef.Shoot();
             }
             
             // Controlla se ci sono ancora domande nel QuestioManager(QuestioLevel)
@@ -109,7 +113,7 @@ namespace Leo.Scripts
         private void OnSceneLoaded(Scene scene,LoadSceneMode mode)
         {
             //Controlla che non venga fatta nessuna inizializzazione nel menù
-            if (scene.buildIndex != 0 /*|| scene.buildIndex != TransitionScene*/)
+            if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition")))
             {
                 
                 _playerRef = FindObjectOfType<Player>();
@@ -118,23 +122,23 @@ namespace Leo.Scripts
                 _effectsManager = FindObjectOfType<EffectsManager>();
 
                 //Setta la vita del player in base al livello.
-                _playerRef.health = DestinationWaypoint.levelIndex;
+                if (_playerRef != null)
+                {
+                    _playerRef.health = DestinationWaypoint.levelIndex;
             
-                _playerRef.lifeSlider.maxValue = _playerRef.health ;
-                _playerRef.lifeSlider.value = _playerRef.lifeSlider.maxValue;
-                
-                //Setta la vita dell'enemy in base al livello.
-                _enemyRef.health = DestinationWaypoint.levelIndex;
-            
-                _enemyRef.lifeSlider.maxValue = _enemyRef.health ;
-                _enemyRef.lifeSlider.value = _enemyRef.lifeSlider.maxValue;
-                
-            }
-            else
-            {
-               // _soundManager.StopFightSound();
-            }
+                    _playerRef.lifeSlider.maxValue = _playerRef.health ;
+                    _playerRef.lifeSlider.value = _playerRef.lifeSlider.maxValue;
+                }
 
+                if (_enemyRef != null)
+                {
+                    //Setta la vita dell'enemy in base al livello.
+                    _enemyRef.health = DestinationWaypoint.levelIndex;
+            
+                    _enemyRef.lifeSlider.maxValue = _enemyRef.health ;
+                    _enemyRef.lifeSlider.value = _enemyRef.lifeSlider.maxValue;
+                }
+            }
         }
         
         
@@ -183,10 +187,6 @@ namespace Leo.Scripts
             SceneManager.LoadScene(0);
         }
         
-        //Metodo per caricare la transition nel caso in cui si prema lo Start Button.
-        public void LoadTransition()
-        {
-            SceneManager.LoadScene("LoadingTransition");
-        }
+
     }
 }

@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Leo.Scripts;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 namespace Leo.Scripts
 {
@@ -14,11 +12,14 @@ namespace Leo.Scripts
         //Funzione per gestire lo shooting del nemico.
         public override void Shoot()
         {
-            //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
-            Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
-            AudioSource.PlayClipAtPoint(shootingSound, originShooting.transform.position, 1);
-            //Fa partire l'emmiters (particle system)
-            projectileEmitter.Play();
+            if (canAttack)
+            {
+                //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
+                Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
+                AudioSource.PlayClipAtPoint(shootingSound, originShooting.transform.position, 1);
+                //Fa partire l'emmiters (particle system)
+                projectileEmitter.Play();
+            }
         }
 
         //Funzione per far gestire la morte del nemico.
