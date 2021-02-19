@@ -17,30 +17,34 @@ public class TimerCountdown : MonoBehaviour
     
     //
     private EffectsManager _effectsManager;
+    private Image _image;
 
 
     private void Start()
     {
         _effectsManager = FindObjectOfType<EffectsManager>();
+        _image = timeRemaining.GetComponent<Image>();
     }
 
     private void Update()
     {
         timeToAnswer.value -= Time.deltaTime;
         
+        //Reimpostato continuamente la condizione del testo a false, in modo da resettarla per ogni livello.
+        GameManager.Instance.TextPlaying = false;   
         
         //Impostazione del colore del tempo in base al tempo mancante
         if (timeToAnswer.value > sliderToBecomeRed  &&  timeToAnswer.value < sliderToBecomeYellow)
         {
-            timeRemaining.GetComponent<Image>().color = Color.yellow;
+            _image.color = Color.yellow;
         }
         else if (timeToAnswer.value < sliderToBecomeRed)
         {
-            timeRemaining.GetComponent<Image>().color = Color.red;
+            _image.color = Color.red;
         }
         else
         {
-            timeRemaining.GetComponent<Image>().color = Color.green;
+            _image.color = Color.green;
         }
         
         if (timeToAnswer.value < Mathf.Epsilon)
@@ -48,15 +52,14 @@ public class TimerCountdown : MonoBehaviour
             if (!(GameManager.Instance.TextPlaying))
             {
                 //Gestisce il GameOver dovuto allo scadere del tempo.
-            
+
                 _effectsManager.HideBoxQuestionAndTimer();
                 _effectsManager.ShowGameOverText();
                 //Set del levelOrigin nel livello appena raggiunto(ritentare).
                 GameManager.Instance.LevelOriginIndex = GameManager.Instance.LevelDestinationIndex;
                 //Ricarica il menù di selezione del livello, dopo un certo delay.
-                Invoke("LoadMainMap",5);
+                Invoke("LoadMainMap", 5);
             }
-
         }
     }
     

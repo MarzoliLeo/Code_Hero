@@ -56,6 +56,7 @@ namespace Leo.Scripts
         public bool TextPlaying
         {
             get => textPlaying;
+            set => textPlaying = value;
         }
         
                 
