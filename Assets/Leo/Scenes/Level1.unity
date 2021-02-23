@@ -319,6 +319,7 @@ MonoBehaviour:
   projectileEmitter: {fileID: 7747560765822573979}
   takingDamageEmitter: {fileID: 51594181}
   isDead: 0
+  canAttack: 0
   shootingSound: {fileID: 8300000, guid: e243d55f7381e83409e908581195bb87, type: 3}
 --- !u!212 &57545114
 SpriteRenderer:
@@ -2113,7 +2114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &921583167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2411,6 +2412,7 @@ MonoBehaviour:
   projectileEmitter: {fileID: 1571889252}
   takingDamageEmitter: {fileID: 2105458993}
   isDead: 0
+  canAttack: 0
   shootingSound: {fileID: 8300000, guid: e243d55f7381e83409e908581195bb87, type: 3}
 --- !u!95 &1059880471
 Animator:

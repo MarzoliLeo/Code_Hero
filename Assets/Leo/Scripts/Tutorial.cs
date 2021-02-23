@@ -1,22 +1,27 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Leo.Scripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
-    private bool alreadyExplained;
+
     private const float TransitionText = 2.5f;
     public Text tutorialText;
 
     private void Start()
     {
-        if (!alreadyExplained)
+        if (!GameManager.Instance.TutorialExplained)
         {
-            alreadyExplained = true;
+            GameManager.Instance.TutorialExplained = true;
             StartCoroutine(ChangeTextRunTime());
+        }
+        else
+        {
+            tutorialText.text = "Ben fatto continua così!";
         }
             
     }

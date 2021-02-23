@@ -29,10 +29,7 @@ public class TimerCountdown : MonoBehaviour
     private void Update()
     {
         timeToAnswer.value -= Time.deltaTime;
-        
-        //Reimpostato continuamente la condizione del testo a false, in modo da resettarla per ogni livello.
-        GameManager.Instance.TextPlaying = false;   
-        
+
         //Impostazione del colore del tempo in base al tempo mancante
         if (timeToAnswer.value > sliderToBecomeRed  &&  timeToAnswer.value < sliderToBecomeYellow)
         {
@@ -49,7 +46,7 @@ public class TimerCountdown : MonoBehaviour
         
         if (timeToAnswer.value < Mathf.Epsilon)
         {
-            if (!(GameManager.Instance.TextPlaying))
+            if (GameManager.Instance.TextPlaying == false)
             {
                 //Gestisce il GameOver dovuto allo scadere del tempo.
 

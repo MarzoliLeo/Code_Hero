@@ -9,8 +9,13 @@ namespace Leo.Scripts
 {
     public class GameManager : Singleton<GameManager>
     {
+        //
+        private bool tutorialExplained;
+
+        //Variabile per il corretto controllo per mostrare i testi di: Victory & GameOver
         private bool textPlaying;
 
+        //
         private bool _drawMode = false;
         private const float timeToWait = 0.7f;
         
@@ -57,6 +62,12 @@ namespace Leo.Scripts
         {
             get => textPlaying;
             set => textPlaying = value;
+        }
+        
+        public bool TutorialExplained
+        {
+            get => tutorialExplained;
+            set => tutorialExplained = value;
         }
         
                 
@@ -116,7 +127,10 @@ namespace Leo.Scripts
             //Controlla che non venga fatta nessuna inizializzazione nel menù
             if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition")))
             {
+                //Reimpostato la condizione del testo a false, in modo da resettarla per ogni livello.
+                GameManager.Instance.TextPlaying = false;
                 
+                //
                 _playerRef = FindObjectOfType<Player>();
                 _enemyRef = FindObjectOfType<Enemy>();
                 _questionManager = FindObjectOfType<QuestionManager>();
