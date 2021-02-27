@@ -62,6 +62,69 @@
                     "isCorrect": false
                 }
             ]
+        },
+        {
+            "question": "Quale NON e' una istruzione di iterazione?",
+            "answers": [
+                {
+                    "text": "While",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Do-while",
+                    "isCorrect": false
+                },
+                {
+                    "text": "For",
+                    "isCorrect": false
+                },
+                {
+                    "text": "If-else",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "question": "Come posso ottenere il numero di elementi di un'array?",
+            "answers": [
+                {
+                    "text": "A.Length",
+                    "isCorrect": true
+                },
+                {
+                    "text": "A.Dimension",
+                    "isCorrect": false
+                },
+                {
+                    "text": "A.Sort",
+                    "isCorrect": false
+                },
+                {
+                    "text": "A.Numbers",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "L'istruzione foreach e' una semplificazione di quale istruzione?",
+            "answers": [
+                {
+                    "text": "While",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Each",
+                    "isCorrect": false
+                },
+                {
+                    "text": "For",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Repeat",
+                    "isCorrect": false
+                }
+            ]
         }
 
     ]

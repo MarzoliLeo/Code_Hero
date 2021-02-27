@@ -18,13 +18,26 @@ namespace Leo.Scripts
             _playerRef = FindObjectOfType<Player>();
             _enemyRef = FindObjectOfType<Enemy>();
             
-            canvasOfBoxQuestion.SetActive(true);
-            canvasSliderTimer.SetActive(true);
+            InitializeCanvases();
+        }
+        
+        //Metodo per far partire correttamente la visibilità dei GameObject nella scena di gioco.
+        public void InitializeCanvases()
+        {
+            //canvasOfBoxQuestion.SetActive(true);
+            //canvasSliderTimer.SetActive(true);
             victoryText.SetActive(false);
             gameOverText.SetActive(false);
         }
+
+        //Metodo per mostrare il box delle domande con le risposte e il timer.
+        public void ShowBoxQuestionAndTimer()
+        {
+            canvasOfBoxQuestion.SetActive(true);
+            canvasSliderTimer.SetActive(true);
+        }
         
-        //Metodo per nascondere il box delle domande con le risposte.
+        //Metodo per nascondere il box delle domande con le risposte e il timer.
         public void HideBoxQuestionAndTimer()
         {
             canvasOfBoxQuestion.SetActive(false);

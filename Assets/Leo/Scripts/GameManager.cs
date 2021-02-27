@@ -124,7 +124,7 @@ namespace Leo.Scripts
         //Evento del SceneManager interno.
         private void OnSceneLoaded(Scene scene,LoadSceneMode mode)
         {
-            //Controlla che non venga fatta nessuna inizializzazione nel menù
+            //Controlla che non venga fatta nessuna inizializzazione nel menù o nella scena di transizione
             if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition")))
             {
                 //Reimpostato la condizione del testo a false, in modo da resettarla per ogni livello.

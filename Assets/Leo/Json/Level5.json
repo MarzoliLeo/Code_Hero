@@ -104,6 +104,111 @@
                     "isCorrect": false
                 }
             ]
+        },
+        {
+            "question": "L'identificatore Const indica che il valore della variabile e'?",
+            "answers": [
+                {
+                    "text": "Nullo",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Variabile",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Immodificabile",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Non usabile",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Una classe può anche essere considerata che cosa?",
+            "answers": [
+                {
+                    "text": "Abstract Data Type",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un compilatore",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Una interfaccia",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Uno scarabocchio",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "In un diagramma a stati finiti come si indica il Guardian?",
+            "answers": [
+                {
+                    "text": "/guardian",
+                    "isCorrect": false
+                },
+                {
+                    "text": "[guardian]",
+                    "isCorrect": true
+                },
+                {
+                    "text": "{guardian}",
+                    "isCorrect": false
+                },
+                {
+                    "text": "-guardian-",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Chi dice che un Oggetto ha uno stato, comportamento e identita'?",
+            "answers": [
+                {
+                    "text": "Steve Jobs",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Peter Parker",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Alan Kayn",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Grady Booch",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "question": "Quale paradigma utilizza l'UML?",
+            "answers": [
+                {
+                    "text": "Dichiarativo",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Funzionale",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Model-view",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Procedurale",
+                    "isCorrect": false
+                }
+            ]
         }
 
     ]

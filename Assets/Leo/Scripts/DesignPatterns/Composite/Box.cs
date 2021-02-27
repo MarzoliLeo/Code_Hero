@@ -2,7 +2,7 @@
 using UnityEngine;
 
 //classe di COMPOSITE.
-public class Box : IComponent
+public class Box :  IComponent
 {
     //Lista delle foglie (powerUps)
     List<IComponent> components = new List<IComponent>();
@@ -38,9 +38,13 @@ public class Box : IComponent
     //Metodo per selezionare una Random dalla Composite altrimenti entra nel Composite interno.
     public void Pick()
     {
-        Debug.Log("********* Sono dentro il box: " + Name + " e rarita' " + Rarity);
+        //Todo Questo debug diventerà un instantiate del box.
+        //Debug.Log("********* Sono dentro il box: " + Name + " e rarita' " + Rarity);
+
         if (Rarity == BoxRarity.Common)
         {
+            //Instantiate(BoxManager.Instance.box1, transform.position, Quaternion.identity);
+            
             int index = Random.Range(0,components.Count);
             components[index].Pick();
         }
@@ -48,6 +52,7 @@ public class Box : IComponent
         {
             foreach (var c in components)
             {
+                //Instantiate(BoxManager.Instance.box2, new Vector3(5,1,1), Quaternion.identity);
                 c.Pick();
             }
         }

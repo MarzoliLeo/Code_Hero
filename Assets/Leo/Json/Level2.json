@@ -41,6 +41,48 @@
                     "isCorrect": true
                 }
             ]
+        },
+        {
+            "question": "Quale NON e' un operatore aritmetico?",
+            "answers": [
+                {
+                    "text": "+",
+                    "isCorrect": false
+                },
+                {
+                    "text": "!",
+                    "isCorrect": true
+                },
+                {
+                    "text": "%",
+                    "isCorrect": false
+                },
+                {
+                    "text": "-",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Se scrivo N = (int) 5.7 ... che valore ha N?",
+            "answers": [
+                {
+                    "text": "5",
+                    "isCorrect": true
+                },
+                {
+                    "text": "5.7",
+                    "isCorrect": false
+                },
+                {
+                    "text": "5.1",
+                    "isCorrect": false
+                },
+                {
+                    "text": "5.0",
+                    "isCorrect": false
+                }
+            ]
         }
     ]
 }

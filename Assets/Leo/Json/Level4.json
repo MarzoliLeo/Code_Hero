@@ -75,12 +75,96 @@
                     "isCorrect": true
                 },
                 {
-                    "text": "Encapsulation",
+                    "text": "Incapsulamento",
                     "isCorrect": false
                 },
                 {
                     "text": "Information Hiding",
                     "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "La keyword Finally e' usata in che contesto?",
+            "answers": [
+                {
+                    "text": "Polimorfismo",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Information Hiding",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Exceptions",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Interfaces",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Un Dizionario e' per definizione una...",
+            "answers": [
+                {
+                    "text": "Hashtable",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Matrice",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Lista di Oggetti",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Condizione",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Un Nullable può assumere quale altro valore oltre al loro specifico?",
+            "answers": [
+                {
+                    "text": "Void",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Null",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Int",
+                    "isCorrect": false
+                },
+                {
+                    "text": "String",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": " Quale Data Type assume var nell'istruzione... var x = 5.0f?",
+            "answers": [
+                {
+                    "text": "Number",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Null",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Int",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Float",
+                    "isCorrect": true
                 }
             ]
         }

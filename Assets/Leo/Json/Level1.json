@@ -1,7 +1,6 @@
 {
     "questions": [
         {
-            "number":1,
             "question": "Che tipo di linguaggio e' C#",
             "answers": [
                 {
@@ -18,6 +17,27 @@
                 },
                 {
                     "text": "Inglese",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Quale paradigma ha un livello di astrazione più basso?",
+            "answers": [
+                {
+                    "text": "Codice Macchina",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Assembly",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Procedurale",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Dichiarativo",
                     "isCorrect": false
                 }
             ]
