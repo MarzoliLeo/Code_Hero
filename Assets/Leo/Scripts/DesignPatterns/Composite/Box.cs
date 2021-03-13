@@ -36,26 +36,24 @@ public class Box :  IComponent
     }
     
     //Metodo per selezionare una Random dalla Composite altrimenti entra nel Composite interno.
-    public void Pick()
+    public IComponent Pick(ref List<IComponent> itemsInABox)
     {
-        //Todo Questo debug diventerà un instantiate del box.
-        //Debug.Log("********* Sono dentro il box: " + Name + " e rarita' " + Rarity);
+        Debug.Log("********* Sono dentro il box: " + Name + " e rarita' " + Rarity);
 
         if (Rarity == BoxRarity.Common)
         {
-            //Instantiate(BoxManager.Instance.box1, transform.position, Quaternion.identity);
-            
             int index = Random.Range(0,components.Count);
-            components[index].Pick();
+            itemsInABox.Add(components[index].Pick(ref itemsInABox));
         }
         else if (Rarity == BoxRarity.Rare || Rarity == BoxRarity.Legendary)
         {
             foreach (var c in components)
             {
-                //Instantiate(BoxManager.Instance.box2, new Vector3(5,1,1), Quaternion.identity);
-                c.Pick();
+                c.Pick(ref itemsInABox);
             }
         }
-
+        
+        itemsInABox.Add(this);
+        return this;
     }
 }

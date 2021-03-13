@@ -18,6 +18,15 @@ public class TimerCountdown : MonoBehaviour
     //
     private EffectsManager _effectsManager;
     private Image _image;
+    
+    //
+    private bool timerScaling;
+
+    public bool TimerScaling
+    {
+        get => timerScaling;
+        set => timerScaling = value;
+    }
 
 
     private void Start()

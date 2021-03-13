@@ -1,7 +1,9 @@
-﻿public interface IComponent
+﻿using System.Collections.Generic;
+
+public interface IComponent
 {
     
     string Name { get; set; }
     void Booster();
-    void Pick();
+    IComponent Pick(ref List<IComponent> itemsInABox);
 }

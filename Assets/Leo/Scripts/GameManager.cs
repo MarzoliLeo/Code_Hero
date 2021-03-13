@@ -10,6 +10,9 @@ namespace Leo.Scripts
     public class GameManager : Singleton<GameManager>
     {
         //
+        private bool onlyOneLevelVictoryGameOver;
+        
+        //
         private bool tutorialExplained;
 
         //Variabile per il corretto controllo per mostrare i testi di: Victory & GameOver
@@ -90,6 +93,30 @@ namespace Leo.Scripts
             LevelOriginIndex = 1;
             LevelDestinationIndex = 1;
         }
+        
+        //Controllo continuamente se il player o l'enemy sono morti prima del finire delle domande.
+        private void Update()
+        {
+            //Todo deve partire una sola couritine sennò spamma il ricarimento del menù.
+            
+            if (_enemyRef != null && _playerRef != null && _effectsManager != null)
+            {
+                if (_enemyRef.isDead && !onlyOneLevelVictoryGameOver)
+                {
+                    onlyOneLevelVictoryGameOver = true;
+
+                    StartCoroutine(LevelVictory());
+                }
+                else if (_playerRef.isDead && !onlyOneLevelVictoryGameOver)
+                {
+                    onlyOneLevelVictoryGameOver = true;
+                    _effectsManager.HideBoxQuestionAndTimer();
+                    
+                    StartCoroutine(LevelGameOver());
+                }
+                //altrimenti continui ad eseguire.
+            }
+        }
 
         public void OnAnswerEvaluation(bool value)
         {
@@ -111,7 +138,7 @@ namespace Leo.Scripts
             // Controlla se ci sono ancora domande nel QuestioManager(QuestioLevel)
             if (_questionManager.CountQuestions() == 0)
             {
-                StartCoroutine(LevelVictory());
+                //se sono finite le domande hai perso.
                 StartCoroutine(LevelGameOver());
             }
             else
@@ -125,8 +152,11 @@ namespace Leo.Scripts
         private void OnSceneLoaded(Scene scene,LoadSceneMode mode)
         {
             //Controlla che non venga fatta nessuna inizializzazione nel menù o nella scena di transizione
-            if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition")))
+            if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition") || scene.name.Equals("Powerup")))
             {
+                //Reimpostare il boleano per la valutazione del isPlayerDead o isEnemyDead
+                onlyOneLevelVictoryGameOver = false;
+                
                 //Reimpostato la condizione del testo a false, in modo da resettarla per ogni livello.
                 GameManager.Instance.TextPlaying = false;
                 
@@ -160,12 +190,14 @@ namespace Leo.Scripts
         //Funzione per gestire la vittoria del livello;
         IEnumerator LevelVictory()
         {
+            //Todo sistemare il fatto che quando rispondi alla prima domanda mostra la seconda domanda con calma.
+            _effectsManager.HideBoxQuestionAndTimer();
             yield return new WaitForSeconds(timeToWait);
             if (_enemyRef.isDead)
             {
                 textPlaying = true;
                 _drawMode = false;
-                _effectsManager.HideBoxQuestionAndTimer();
+                
                 _effectsManager.ShowVictoryText();
                 //Set del levelOrigin nel livello appena completato.
                 LevelOriginIndex = LevelDestinationIndex;
@@ -183,11 +215,12 @@ namespace Leo.Scripts
         //Funzione per gestire il Game Over del livello;
         IEnumerator LevelGameOver()
         {
+            _effectsManager.HideBoxQuestionAndTimer();
             yield return new WaitForSeconds(timeToWait + 0.05f);
             if (_playerRef.isDead || _drawMode)
             {
                 textPlaying = true;
-                _effectsManager.HideBoxQuestionAndTimer();
+                
                 _effectsManager.ShowGameOverText();
                 //Set del levelOrigin nel livello appena raggiunto(ritentare).
                 LevelOriginIndex = LevelDestinationIndex;

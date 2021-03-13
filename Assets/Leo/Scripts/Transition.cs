@@ -11,14 +11,16 @@ public class Transition : MonoBehaviour
 
     private void Start()
     {
-        Invoke(methodName: "LoadIndexLevel", time: secondsToWait);
+        Invoke(methodName: "LoadPowerupScene", time: secondsToWait);
     }
     
     //Metodo per caricare il livello rispettivamente all'index.
-    private void LoadIndexLevel()
+    private void LoadPowerupScene()
     {
-        SceneManager.LoadScene(GameManager.Instance.DestinationWaypoint.levelIndex);
+        //SceneManager.LoadScene(GameManager.Instance.DestinationWaypoint.levelIndex);
         //Todo Creare un delay per fare partire il suono
-        SoundManager.Instance.PlayFightSound();
+        //SoundManager.Instance.PlayFightSound();
+
+        SceneManager.LoadScene("Powerup");
     }
 }

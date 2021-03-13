@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 //Classe di FOGLIA
 
@@ -18,11 +19,12 @@ public class PowerUp : IComponent
         Debug.Log("Sono dentro il Booster del powerUp: "+ Name);
     }
 
-    public void Pick()
+    public IComponent Pick(ref List<IComponent> itemsInABox)
     {
-        //todo Controllare quale tipo di powerUp e' con un booleano e effettuare le modifiche al gioco in base a quello.
+        //todo Controllare quale tipo di powerUp e' con un booleano e effettuare le modifiche (nel GameManager) al gioco in base a quello.
         //return this;
         Debug.Log("Ho appliccato il powerUp: "+ Name);
+        return this;
     }
     
 }

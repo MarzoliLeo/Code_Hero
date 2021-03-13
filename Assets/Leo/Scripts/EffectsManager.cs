@@ -24,8 +24,9 @@ namespace Leo.Scripts
         //Metodo per far partire correttamente la visibilità dei GameObject nella scena di gioco.
         public void InitializeCanvases()
         {
-            //canvasOfBoxQuestion.SetActive(true);
-            //canvasSliderTimer.SetActive(true);
+            canvasOfBoxQuestion.SetActive(true);
+            canvasSliderTimer.SetActive(true);
+            
             victoryText.SetActive(false);
             gameOverText.SetActive(false);
         }

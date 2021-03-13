@@ -24,10 +24,14 @@ public class BoxManager : Singleton<BoxManager>
     //Lista che contiene i Box da cui selezionare.
     List<Box> boxList = new List<Box>();
     
+    //Lista che contiene tutti gli Icomponent usciti dal box "pescato".
+    List<IComponent> itemsInABox = new List<IComponent>();
+    
     //Raccoglie, per poi mostrare nel gioco, i box common/rare/legendary
     public GameObject box1;
     public GameObject box2;
     public GameObject box3;
+    private static readonly int OpenBox = Animator.StringToHash("OpenBox");
 
     private void Start()
     { 
@@ -70,10 +74,11 @@ public class BoxManager : Singleton<BoxManager>
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         //Controlla che non venga fatta nessuna inizializzazione nel menù o nella scena di transizione
+        /*
         if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition")))
         {
-            //Ferma il tempo di gioco
-            Time.timeScale = 0;
+            //Il timeScale del Timer e' attivato/disattivato secondo un booleano.
+            FindObjectOfType<TimerCountdown>().TimerScaling = false;
             
             //
             _effectsManager = FindObjectOfType<EffectsManager>();
@@ -81,6 +86,17 @@ public class BoxManager : Singleton<BoxManager>
             {
                 _effectsManager.HideBoxQuestionAndTimer();
             }
+            
+            ShowPowerUp();
+        }*/
+        
+        //Controlliamo di essere nella Scena di PowerUp
+        if (scene.name.Equals("Powerup"))
+        {
+            //Istanzia tutte le box nel gioco CHIUSE
+            Instantiate(box1, transform.position, Quaternion.identity);
+            Instantiate(box2, transform.position, Quaternion.identity);
+            Instantiate(box3, transform.position, Quaternion.identity);
             
             ShowPowerUp();
         }
@@ -91,15 +107,41 @@ public class BoxManager : Singleton<BoxManager>
     {
         Random rand = new Random();
         int index = rand.Next(0,boxList.Count);
+        
+        //Debug.Log("Ho scelto il box in posizione: " + index);
         /*
-        Debug.Log("Ho scelto il box in posizione: " + index);
         foreach (var b in boxList)
         {
             Debug.Log("La rarita dei box contenuta nella lista e': "+ b.Rarity);
         }*/
-        boxList[index].Pick();
         
-        Instantiate(box1, transform.position, Quaternion.identity);
+        boxList[index].Pick(ref itemsInABox);
+
+        foreach (var item in itemsInABox)
+        {
+            //Todo trovare se possibile un modo per evitare di scrivere (Clone)
+            if (item.Name.Equals("Common"))
+            {
+                //APRE ( a video ) il CommonBox se entra qui.
+                GameObject.Find("CommonBox(Clone)").GetComponent<Animator>().SetBool("OpenBox",true);
+            }
+            else if (item.Name.Equals("Rare"))
+            {
+                //APRE ( a video ) il RareBox se entra qui.
+                GameObject.Find("RareBox(Clone)").GetComponent<Animator>().SetBool("OpenBox",true);
+            }
+            else if (item.Name.Equals("Legendary"))
+            {
+                //APRE ( a video ) il LegendaryBox se entra qui.
+                GameObject.Find("LegendaryBox(Clone)").GetComponent<Animator>().SetBool("OpenBox",true);
+            }
+            else
+            {
+                //Todo Allora è un powerUP se è qui dentro
+            }
+            
+        }
+       
     }
 
     

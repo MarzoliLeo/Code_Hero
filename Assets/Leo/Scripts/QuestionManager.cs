@@ -15,6 +15,9 @@ namespace Leo.Scripts
         private AnswerController[] _answerController;
 
         private QuestionLevel ql;
+
+        //Booleano per verificare se il gioco ha inizio o no.
+        public bool startQuestion;
         
         // Start is called before the first frame update
         void Start()
