@@ -166,23 +166,40 @@ namespace Leo.Scripts
                 _questionManager = FindObjectOfType<QuestionManager>();
                 _effectsManager = FindObjectOfType<EffectsManager>();
 
-                //Setta la vita del player in base al livello.
-                if (_playerRef != null)
-                {
-                    _playerRef.health = DestinationWaypoint.levelIndex;
+                SetHealthGame();
+            }
+        }
+        
+       //Funzione per impostare correttamente la vita in base al livello e secondo il PowerUp.
+        public void SetHealthGame()
+        {
+            //Setta la vita del player in base al livello.
+            if (_playerRef != null && PoweUpManager.Instance.increaseHealth.Active)
+            {
+                _playerRef.health = DestinationWaypoint.levelIndex;
             
-                    _playerRef.lifeSlider.maxValue = _playerRef.health ;
-                    _playerRef.lifeSlider.value = _playerRef.lifeSlider.maxValue;
-                }
+                _playerRef.lifeSlider.maxValue = _playerRef.health + 1;
+                _playerRef.lifeSlider.value = _playerRef.lifeSlider.maxValue;
+                
+                PoweUpManager.Instance.increaseHealth.Active = false;
 
-                if (_enemyRef != null)
-                {
-                    //Setta la vita dell'enemy in base al livello.
-                    _enemyRef.health = DestinationWaypoint.levelIndex;
+            }
+            else
+            {
+                _playerRef.health = DestinationWaypoint.levelIndex;
             
-                    _enemyRef.lifeSlider.maxValue = _enemyRef.health ;
-                    _enemyRef.lifeSlider.value = _enemyRef.lifeSlider.maxValue;
-                }
+                _playerRef.lifeSlider.maxValue = _playerRef.health ;
+                _playerRef.lifeSlider.value = _playerRef.lifeSlider.maxValue;
+            }
+            
+            //Setta la vita dell'enemy in base al livello.
+            if (_enemyRef != null)
+            {
+                
+                _enemyRef.health = DestinationWaypoint.levelIndex;
+            
+                _enemyRef.lifeSlider.maxValue = _enemyRef.health ;
+                _enemyRef.lifeSlider.value = _enemyRef.lifeSlider.maxValue;
             }
         }
         

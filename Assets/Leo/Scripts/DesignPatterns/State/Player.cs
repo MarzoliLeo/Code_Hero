@@ -7,7 +7,7 @@ namespace Leo.Scripts
 {
     public class Player : CharacterBase
     {
-        //
+        //Questo damage e' definito solo sul Player poiche' serve per il PowerUp.
         private int damage = 1;
 
         public int Damage

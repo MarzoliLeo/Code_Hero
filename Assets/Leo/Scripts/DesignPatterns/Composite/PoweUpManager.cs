@@ -43,41 +43,23 @@ public class PoweUpManager : Singleton<PoweUpManager>
 
             if (increaseDmg.Active)
             {
-                IncreaseDamage();
+                if(_player != null)
+                    _player.Damage = 2;
+                
+                increaseDmg.Active = false;
             }
             else if (increaseHealth.Active)
             {
-                //Todo aumentare la health del player di 1
-                IncreaseHealth();
+                //Sistemare i bug relativi all'incremento di vita fatto nel  GameManager.
+                //IncreaseHealth();
             }
             else if (slowTimer.Active)
             {
-                //Todo rallentare la velocita' del Timer.
-                SlowTimer();
+                FindObjectOfType<TimerCountdown>().speedOfTime = 5000f;
+                slowTimer.Active = false;
             }
         }
     }
     
-    //Metodo per applicare il PowerUp "Increase Damage"
-    private void IncreaseDamage()
-    {
-        if(_player != null)
-            _player.Damage = 2;
-    }
-    
-    //Metodo per applicare il PowerUp "Increase Health"
-    private void IncreaseHealth()
-    {
-        if (_player != null)
-        {
-            
-        }
-    }
-    
-    //Metodo per applicare il PowerUp "Slow Timer"
-    private void SlowTimer()
-    {
-        
-    }
     
 }

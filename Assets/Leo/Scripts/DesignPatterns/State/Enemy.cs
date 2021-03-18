@@ -33,7 +33,7 @@ namespace Leo.Scripts
             health -= FindObjectOfType<Player>().Damage;
             lifeSlider.value -= FindObjectOfType<Player>().Damage;
 
-            if (health == 0)
+            if (health <= 0)
             {
                 isDead = true;
 

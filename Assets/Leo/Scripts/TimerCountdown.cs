@@ -12,9 +12,11 @@ public class TimerCountdown : MonoBehaviour
     public Slider timeToAnswer;
     public GameObject timeRemaining;
 
+    public float speedOfTime = 1f;
+    
     private int sliderToBecomeYellow = 6;
     private int sliderToBecomeRed = 3;
-    
+
     //
     private EffectsManager _effectsManager;
     private Image _image;
@@ -37,7 +39,12 @@ public class TimerCountdown : MonoBehaviour
 
     private void Update()
     {
-        timeToAnswer.value -= Time.deltaTime;
+        /*if (!PoweUpManager.Instance.slowTimer.Active)
+        {
+            speedOfTime = 1f;
+        }*/
+        
+        timeToAnswer.value -= Time.deltaTime / speedOfTime;
 
         //Impostazione del colore del tempo in base al tempo mancante
         if (timeToAnswer.value > sliderToBecomeRed  &&  timeToAnswer.value < sliderToBecomeYellow)
