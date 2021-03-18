@@ -7,10 +7,7 @@ using Random = System.Random;
 
 public class BoxManager : Singleton<BoxManager>
 {
-    //Creazione delle foglie
-    IComponent increaseDmg = new PowerUp("Aumento Danni");
-    IComponent increaseHealth = new PowerUp("Aumento Vita");
-    IComponent slowTimer = new PowerUp("Rallentamento Timer");
+    private PoweUpManager _powerUpManager;
     
     //Creazione dei components
     Box commonBox = new Box("Common",Box.BoxRarity.Common);
@@ -31,14 +28,17 @@ public class BoxManager : Singleton<BoxManager>
     public GameObject box1;
     public GameObject box2;
     public GameObject box3;
+    
     private static readonly int OpenBox = Animator.StringToHash("OpenBox");
 
     private void Start()
-    { 
+    {
+        _powerUpManager = FindObjectOfType<PoweUpManager>();
+        
         //commonBox = 1 powerup Random
-        commonBox.AddComponent(increaseDmg);
-        commonBox.AddComponent(increaseHealth);
-        commonBox.AddComponent(slowTimer);
+        commonBox.AddComponent(_powerUpManager.increaseDmg);
+        commonBox.AddComponent(_powerUpManager.increaseHealth);
+        commonBox.AddComponent(_powerUpManager.slowTimer);
         
         //rareBox =   2 commonBox
         rareBox.AddComponent(commonBox);

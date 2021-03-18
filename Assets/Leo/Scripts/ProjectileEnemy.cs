@@ -10,6 +10,7 @@ public class ProjectileEnemy : MonoBehaviour
     //Velocità del projectile nel sparare
     private int projectileSpeed = 9;
     private int damage = 1;
+    
 
     public int Damage
     {
@@ -20,6 +21,7 @@ public class ProjectileEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.velocity = Vector2.left * projectileSpeed;
     }

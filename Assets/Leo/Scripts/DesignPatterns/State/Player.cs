@@ -7,6 +7,14 @@ namespace Leo.Scripts
 {
     public class Player : CharacterBase
     {
+        //
+        private int damage = 1;
+
+        public int Damage
+        {
+            get => damage;
+            set => damage = value;
+        }
         
         //Funzione per gestire lo shooting del player.
         public  override void Shoot()

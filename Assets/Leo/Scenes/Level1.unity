@@ -2048,6 +2048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionText: {fileID: 1237815555}
+  startQuestion: 0
 --- !u!4 &859155785
 Transform:
   m_ObjectHideFlags: 0

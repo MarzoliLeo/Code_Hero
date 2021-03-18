@@ -7,6 +7,10 @@ public class Box :  IComponent
     //Lista delle foglie (powerUps)
     List<IComponent> components = new List<IComponent>();
 
+    //Usato da Powerup
+    public bool Active { get; set; }
+    
+    //
     public string Name { get; set; }
     
     public BoxRarity Rarity { get; set; }

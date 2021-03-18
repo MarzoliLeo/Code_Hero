@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class PowerUp : IComponent
 {
-    public string Name { get; set; }
+    //Server per dire se un powerUp e' attivo o meno.
+    public bool Active { get; set; }
 
-    //Todo rimuovere questo construct sembra inutile...
+    public string Name { get; set; }
+    
     public PowerUp(string name)
     {
         this.Name = name;
@@ -22,8 +24,25 @@ public class PowerUp : IComponent
     public IComponent Pick(ref List<IComponent> itemsInABox)
     {
         //todo Controllare quale tipo di powerUp e' con un booleano e effettuare le modifiche (nel GameManager) al gioco in base a quello.
-        //return this;
+        /*
         Debug.Log("Ho appliccato il powerUp: "+ Name);
+        return this;
+        */
+        if (Name.Equals("Increase Damage"))
+        {
+            this.Active = true;
+            Debug.Log("Ho appliccato il powerUp: "+ Name);
+        }
+        else if (Name.Equals("Increase Health"))
+        {
+            this.Active = true;
+            Debug.Log("Ho appliccato il powerUp: "+ Name);
+        }
+        else if (Name.Equals("Slow Timer"))
+        {
+            this.Active = true;
+            Debug.Log("Ho appliccato il powerUp: "+ Name);
+        }
         return this;
     }
     

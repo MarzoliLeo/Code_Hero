@@ -29,9 +29,9 @@ namespace Leo.Scripts
             //Mostra i cuori se prendi danno.
             takingDamageEmitter.Play();
             // Settare la vita del player -1 se prende danni
-            var damage = other.GetComponent<ProjectilePlayer>().Damage;
-            health -= damage;
-            lifeSlider.value -= damage;
+            //var damage = other.GetComponent<ProjectilePlayer>().Damage;
+            health -= FindObjectOfType<Player>().Damage;
+            lifeSlider.value -= FindObjectOfType<Player>().Damage;
 
             if (health == 0)
             {
