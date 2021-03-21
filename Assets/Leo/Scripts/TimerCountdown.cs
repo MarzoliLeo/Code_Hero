@@ -39,12 +39,8 @@ public class TimerCountdown : MonoBehaviour
 
     private void Update()
     {
-        /*if (!PoweUpManager.Instance.slowTimer.Active)
-        {
-            speedOfTime = 1f;
-        }*/
         
-        timeToAnswer.value -= Time.deltaTime / speedOfTime;
+        timeToAnswer.value -= Time.deltaTime * speedOfTime;
 
         //Impostazione del colore del tempo in base al tempo mancante
         if (timeToAnswer.value > sliderToBecomeRed  &&  timeToAnswer.value < sliderToBecomeYellow)

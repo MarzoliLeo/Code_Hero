@@ -48,16 +48,24 @@ public class PoweUpManager : Singleton<PoweUpManager>
                 
                 increaseDmg.Active = false;
             }
-            else if (increaseHealth.Active)
+            
+            if (increaseHealth.Active)
             {
                 //Sistemare i bug relativi all'incremento di vita fatto nel  GameManager.
                 //IncreaseHealth();
             }
-            else if (slowTimer.Active)
+            
+            if (slowTimer.Active)
             {
-                FindObjectOfType<TimerCountdown>().speedOfTime = 5000f;
+                FindObjectOfType<TimerCountdown>().speedOfTime = 0.6f;
                 slowTimer.Active = false;
             }
+            else
+            {
+                FindObjectOfType<TimerCountdown>().speedOfTime = 1f;
+            }
+
+            
         }
     }
     
