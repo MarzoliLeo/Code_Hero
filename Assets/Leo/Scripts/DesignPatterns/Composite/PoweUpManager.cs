@@ -15,10 +15,11 @@ public class PoweUpManager : Singleton<PoweUpManager>
 
     //Riferimenti ad altre classi per il powerUp dei danni.
     private Player _player;
+
+    public GameObject powerUpIncreaseDamage;
+    public GameObject powerUpIncreaseHealth;
+    public GameObject powerUpSlowTimer;
     
-    //Riferimenti ad altre classi per il powerUp della vita.
-    
-    //Riferimenti ad altre classi per il powerUp del tempo.
     
     //Collegamento dall'evento.
     private void OnEnable()
@@ -35,12 +36,35 @@ public class PoweUpManager : Singleton<PoweUpManager>
     //Ad ogni caricamento di una nuova scena esegue questo metodo.
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        //Mostrare a video i powerup
+        if (scene.name.Equals("Powerup"))
+        {
+            if (increaseDmg.Active)
+            {
+                //Todo se l'animazione del box e' "finita" cioe' e' aperto allora devi spawnare il PowerUP e mostrarlo a video!
+                Instantiate(powerUpIncreaseDamage, transform.position, Quaternion.identity);
+            }
+
+            if (increaseHealth.Active)
+            {
+                Instantiate(powerUpIncreaseHealth, transform.position, Quaternion.identity);
+            }
+
+            if (slowTimer.Active)
+            {
+                Instantiate(powerUpSlowTimer, transform.position, Quaternion.identity);
+            }
+
+            
+        }
+        
         if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition") || scene.name.Equals("Powerup")))
         {
             
             //Istanza dei riferimenti.
             _player = FindObjectOfType<Player>();
-
+            
+            //If per gestire il powerUp IncreaseDamage
             if (increaseDmg.Active)
             {
                 if(_player != null)
@@ -49,12 +73,13 @@ public class PoweUpManager : Singleton<PoweUpManager>
                 increaseDmg.Active = false;
             }
             
+            //If per gestire il powerUp IncreaseHealth
             if (increaseHealth.Active)
             {
-                //Sistemare i bug relativi all'incremento di vita fatto nel  GameManager.
                 //IncreaseHealth();
             }
             
+            //If per gestire il powerUp SlowTimer
             if (slowTimer.Active)
             {
                 FindObjectOfType<TimerCountdown>().speedOfTime = 0.6f;
@@ -64,8 +89,6 @@ public class PoweUpManager : Singleton<PoweUpManager>
             {
                 FindObjectOfType<TimerCountdown>().speedOfTime = 1f;
             }
-
-            
         }
     }
     

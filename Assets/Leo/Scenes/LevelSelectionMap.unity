@@ -3335,7 +3335,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1497b4d687d117d4880584cba1de68bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _projectilePlayer: {fileID: 999640197893964420, guid: 001cdbbe858f91c4db18c87458013c43, type: 3}
+  powerUpIncreaseDamage: {fileID: 294721284313795102, guid: a7067c062be15fa4ba83d22a8c9b020c, type: 3}
+  powerUpIncreaseHealth: {fileID: 7023738623965571261, guid: 271d3f1902732674291c6594c04cfcd8, type: 3}
+  powerUpSlowTimer: {fileID: 4203791893964481378, guid: 37ccd260b5e269d4096476dc7ab729eb, type: 3}
 --- !u!4 &1791508700
 Transform:
   m_ObjectHideFlags: 0
