@@ -52,11 +52,7 @@ public class BoxManager : Singleton<BoxManager>
         boxList.Add(commonBox);
         boxList.Add(rareBox);
         boxList.Add(legendaryBox);
-
-        /*commonBox.Pick();
-        rareBox.Pick();
-        legendaryBox.Pick();*/
-
+        
     }
     
     //Collegamento dall'evento
@@ -73,23 +69,6 @@ public class BoxManager : Singleton<BoxManager>
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        //Controlla che non venga fatta nessuna inizializzazione nel menù o nella scena di transizione
-        /*
-        if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition")))
-        {
-            //Il timeScale del Timer e' attivato/disattivato secondo un booleano.
-            FindObjectOfType<TimerCountdown>().TimerScaling = false;
-            
-            //
-            _effectsManager = FindObjectOfType<EffectsManager>();
-            if (_effectsManager != null)
-            {
-                _effectsManager.HideBoxQuestionAndTimer();
-            }
-            
-            ShowPowerUp();
-        }*/
-        
         //Controlliamo di essere nella Scena di PowerUp
         if (scene.name.Equals("Powerup"))
         {
@@ -107,13 +86,6 @@ public class BoxManager : Singleton<BoxManager>
     {
         Random rand = new Random();
         int index = rand.Next(0,boxList.Count);
-        
-        //Debug.Log("Ho scelto il box in posizione: " + index);
-        /*
-        foreach (var b in boxList)
-        {
-            Debug.Log("La rarita dei box contenuta nella lista e': "+ b.Rarity);
-        }*/
         
         boxList[index].Pick(ref itemsInABox);
 

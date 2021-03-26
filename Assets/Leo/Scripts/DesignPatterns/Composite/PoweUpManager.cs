@@ -39,23 +39,7 @@ public class PoweUpManager : Singleton<PoweUpManager>
         //Mostrare a video i powerup
         if (scene.name.Equals("Powerup"))
         {
-            if (increaseDmg.Active)
-            {
-                //Todo se l'animazione del box e' "finita" cioe' e' aperto allora devi spawnare il PowerUP e mostrarlo a video!
-                Instantiate(powerUpIncreaseDamage, transform.position, Quaternion.identity);
-            }
-
-            if (increaseHealth.Active)
-            {
-                Instantiate(powerUpIncreaseHealth, transform.position, Quaternion.identity);
-            }
-
-            if (slowTimer.Active)
-            {
-                Instantiate(powerUpSlowTimer, transform.position, Quaternion.identity);
-            }
-
-            
+            StartCoroutine(ChangeAnimationToDespawnAndShowPowerUp());
         }
         
         if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition") || scene.name.Equals("Powerup")))
@@ -91,6 +75,35 @@ public class PoweUpManager : Singleton<PoweUpManager>
             }
         }
     }
-    
+
+    //Coroutine che permette di gestire il flusso di animazioni a video del Powerup
+    IEnumerator ChangeAnimationToDespawnAndShowPowerUp()
+    {
+        yield return new WaitForSeconds(1);
+        
+        GameObject.Find("CommonBox(Clone)").GetComponent<Animator>().SetBool("CloseBox",true);
+        GameObject.Find("RareBox(Clone)").GetComponent<Animator>().SetBool("CloseBox",true);
+        GameObject.Find("LegendaryBox(Clone)").GetComponent<Animator>().SetBool("CloseBox",true);
+        
+        yield return  new WaitForSeconds(1);
+        
+        if (increaseDmg.Active)
+        {
+            Instantiate(powerUpIncreaseDamage, transform.position, Quaternion.identity);
+        }
+
+        if (increaseHealth.Active)
+        {
+            Instantiate(powerUpIncreaseHealth, transform.position, Quaternion.identity);
+        }
+
+        if (slowTimer.Active)
+        {
+            Instantiate(powerUpSlowTimer, transform.position, Quaternion.identity);
+        }
+        
+        
+        
+    }
     
 }
