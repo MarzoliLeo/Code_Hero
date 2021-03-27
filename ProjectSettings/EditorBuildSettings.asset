@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Leo/Scenes/Powerup.unity
     guid: 1a520c0ae2868e84aa06ae719e6c2228
+  - enabled: 1
+    path: Assets/Leo/Scenes/EndGame.unity
+    guid: 890cef78732c04d4e9fc1be40fcb286a
   m_configObjects: {}

@@ -101,20 +101,39 @@ namespace Leo.Scripts
             
             if (_enemyRef != null && _playerRef != null && _effectsManager != null)
             {
-                if (_enemyRef.isDead && !onlyOneLevelVictoryGameOver)
+                //Se il livello in cui ci troviamo e' il finale (quindi il 5° Waypoint), allora...
+                if (DestinationWaypoint.levelIndex == 5)
                 {
-                    onlyOneLevelVictoryGameOver = true;
+                    if (_enemyRef.isDead && !onlyOneLevelVictoryGameOver)
+                    {
+                        onlyOneLevelVictoryGameOver = true;
+                        
+                        StartCoroutine(FinalLevelVictory());
+                    }
+                    else if (_playerRef.isDead && !onlyOneLevelVictoryGameOver)
+                    {
+                        onlyOneLevelVictoryGameOver = true;
+                        _effectsManager.HideBoxQuestionAndTimer();
+                        
+                        StartCoroutine(LevelGameOver());
+                    }
+                }
+                else
+                {
+                    if (_enemyRef.isDead && !onlyOneLevelVictoryGameOver)
+                    {
+                        onlyOneLevelVictoryGameOver = true;
 
-                    StartCoroutine(LevelVictory());
-                }
-                else if (_playerRef.isDead && !onlyOneLevelVictoryGameOver)
-                {
-                    onlyOneLevelVictoryGameOver = true;
-                    _effectsManager.HideBoxQuestionAndTimer();
+                        StartCoroutine(LevelVictory());
+                    }
+                    else if (_playerRef.isDead && !onlyOneLevelVictoryGameOver)
+                    {
+                        onlyOneLevelVictoryGameOver = true;
+                        _effectsManager.HideBoxQuestionAndTimer();
                     
-                    StartCoroutine(LevelGameOver());
+                        StartCoroutine(LevelGameOver());
+                    }
                 }
-                //altrimenti continui ad eseguire.
             }
         }
 
@@ -245,7 +264,15 @@ namespace Leo.Scripts
                 Invoke("LoadLevelSelectionMap",5);
             }
         }
+    
+        //Funzione per finire il gioco.
+        IEnumerator FinalLevelVictory()
+        {
+            yield return new WaitForSeconds(timeToWait);
+            SceneManager.LoadScene("EndGame");
+        }
 
+        //Funzione per ricaricare il menu'
         public void LoadLevelSelectionMap()
         {
             SoundManager.Instance.StopFightSound();

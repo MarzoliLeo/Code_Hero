@@ -7,8 +7,7 @@ namespace Leo.Scripts
 {
     public class WaypointManager : MonoBehaviour
     {
-
-
+        
         public List<GameObject> waypoints = new List<GameObject>();    //Lista che contiene i waypoints.
         
         private GameManager _gameManager;
