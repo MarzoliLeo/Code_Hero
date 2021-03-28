@@ -26,7 +26,7 @@
             "answers": [
                 {
                     "text": "Read-only",
-                    "isCorrect": false
+                    "isCorrect": true
                 },
                 {
                     "text": "Metodo",
@@ -34,7 +34,7 @@
                 },
                 {
                     "text": "Write-Only",
-                    "isCorrect": true
+                    "isCorrect": false
                 },
                 {
                     "text": "Costruttore",
@@ -202,7 +202,7 @@
                 },
                 {
                     "text": "Model-view",
-                    "isCorrect": false
+                    "isCorrect": true
                 },
                 {
                     "text": "Procedurale",

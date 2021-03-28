@@ -167,11 +167,11 @@ namespace Leo.Scripts
             }
         }
         
-        //Evento del SceneManager interno.
+        //Evento del SceneManager interno, richiamato ogni volta che si carica una nuova Scena.
         private void OnSceneLoaded(Scene scene,LoadSceneMode mode)
         {
             //Controlla che non venga fatta nessuna inizializzazione nel menù o nella scena di transizione
-            if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition") || scene.name.Equals("Powerup")))
+            if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition") || scene.name.Equals("Powerup") || scene.name.Equals("EndGame")))
             {
                 //Reimpostare il boleano per la valutazione del isPlayerDead o isEnemyDead
                 onlyOneLevelVictoryGameOver = false;
@@ -239,8 +239,9 @@ namespace Leo.Scripts
                 LevelOriginIndex = LevelDestinationIndex;
                 //Incrementiamo la destinazione del player.
                 LevelDestinationIndex++;
-                Invoke("LoadLevelSelectionMap",5);
-
+                
+                yield return new WaitForSeconds(5);
+                SceneManager.LoadScene(0);
             }
             else
             {
@@ -260,25 +261,28 @@ namespace Leo.Scripts
                 _effectsManager.ShowGameOverText();
                 //Set del levelOrigin nel livello appena raggiunto(ritentare).
                 LevelOriginIndex = LevelDestinationIndex;
-                //Todo fare una variabile per il time.
-                Invoke("LoadLevelSelectionMap",5);
+                
+                yield return new WaitForSeconds(5);
+                SceneManager.LoadScene(0);
             }
         }
     
         //Funzione per finire il gioco.
         IEnumerator FinalLevelVictory()
         {
+            _effectsManager.HideBoxQuestionAndTimer();
+            
             yield return new WaitForSeconds(timeToWait);
+            
+            textPlaying = true;
+            _drawMode = false;
+                
+            _effectsManager.ShowVictoryText();
+            
+            yield return new WaitForSeconds(5);
+            
             SceneManager.LoadScene("EndGame");
         }
-
-        //Funzione per ricaricare il menu'
-        public void LoadLevelSelectionMap()
-        {
-            SoundManager.Instance.StopFightSound();
-            SceneManager.LoadScene(0);
-        }
         
-
     }
 }

@@ -42,7 +42,7 @@ public class PoweUpManager : Singleton<PoweUpManager>
             StartCoroutine(ChangeAnimationToDespawnAndShowPowerUp());
         }
         
-        if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition") || scene.name.Equals("Powerup")))
+        if (!(scene.name.Equals("LevelSelectionMap") || scene.name.Equals("LoadingTransition") || scene.name.Equals("Powerup") || scene.name.Equals("EndGame")))
         {
             
             //Istanza dei riferimenti.

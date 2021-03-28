@@ -16,8 +16,5 @@ public class LoadExactLevel : MonoBehaviour
     private void LoadIndexLevel()
     {
         SceneManager.LoadScene(GameManager.Instance.DestinationWaypoint.levelIndex);
-        
-        //Todo Creare un delay per fare partire il suono
-        SoundManager.Instance.PlayFightSound();
     }
 }

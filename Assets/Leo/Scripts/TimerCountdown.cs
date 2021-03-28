@@ -74,6 +74,6 @@ public class TimerCountdown : MonoBehaviour
     
     public void LoadMainMap()
     {
-        GameManager.Instance.LoadLevelSelectionMap();
+        SceneManager.LoadScene(0);
     }
 }
