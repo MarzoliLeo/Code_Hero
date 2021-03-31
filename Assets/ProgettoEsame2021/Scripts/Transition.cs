@@ -1,26 +1,22 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using ProgettoEsame2021.Scripts;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Transition : MonoBehaviour
+namespace ProgettoEsame2021.Scripts
 {
-    private  int secondsToWait = 5;
-
-    private void Start()
+    public class Transition : MonoBehaviour
     {
-        Invoke(methodName: "LoadPowerupScene", time: secondsToWait);
-    }
+        private  int secondsToWait = 5;
+
+        //Funzione che viene eseguita non appena lo script è caricato.
+        private void Start()
+        {
+            Invoke(methodName: "LoadPowerupScene", time: secondsToWait);
+        }
     
-    //Metodo per caricare il livello rispettivamente all'index.
-    private void LoadPowerupScene()
-    {
-        //SceneManager.LoadScene(GameManager.Instance.DestinationWaypoint.levelIndex);
-        //Todo Creare un delay per fare partire il suono
-        //SoundManager.Instance.PlayFightSound();
-
-        SceneManager.LoadScene("Powerup");
+        //Funzione che passa alla scena relativa ai PowerUp
+        private void LoadPowerupScene()
+        {
+            SceneManager.LoadScene("Powerup");
+        }
     }
 }

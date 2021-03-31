@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartLevel : MonoBehaviour
+namespace ProgettoEsame2021.Scripts
 {
-    //Invocata direttamente dal Game Engine ( Tramite il sistema di Eventi "OnClick").
-    //Funzione passare alla scena di Transition al premere del bottone Start.
-    public void LoadTransition()
+    public class StartLevel : MonoBehaviour
     {
-        SceneManager.LoadScene("LoadingTransition");
+        //Invocata direttamente dal Game Engine ( Tramite il sistema di Eventi "OnClick").
+        //Funzione passare alla scena di Transition al premere del bottone Start.
+        public void LoadTransition()
+        {
+            SceneManager.LoadScene("LoadingTransition");
+        }
     }
 }

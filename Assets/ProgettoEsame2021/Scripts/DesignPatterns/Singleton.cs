@@ -1,64 +1,45 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public abstract class Singleton<T> : MonoBehaviour where T : Component
+namespace ProgettoEsame2021.Scripts.DesignPatterns
 {
-	
-	#region Fields
-
-	/// <summary>
-	/// The instance.
-	/// </summary>
-	private static T instance;
-
-	#endregion
-
-	#region Properties
-
-	/// <summary>
-	/// Gets the instance.
-	/// </summary>
-	/// <value>The instance.</value>
-	public static T Instance
+	public abstract class Singleton<T> : MonoBehaviour where T : Component //Puo' solo essere una classe ( :Component)
 	{
-		get
+		//L'istanza.
+		private static T instance;
+		
+		//Prende l'istanza.
+		public static T Instance
+		{
+			get
+			{
+				if ( instance == null )
+				{
+					instance = FindObjectOfType<T> ();
+					if ( instance == null )
+					{
+						GameObject obj = new GameObject ();
+						obj.name = typeof ( T ).Name;
+						instance = obj.AddComponent<T> ();
+					}
+				}
+				return instance;
+			}
+		}
+		
+		//Usa questa funzione per l'inizializzazione.
+		protected virtual void Awake ()
 		{
 			if ( instance == null )
 			{
-				instance = FindObjectOfType<T> ();
-				if ( instance == null )
-				{
-					GameObject obj = new GameObject ();
-					obj.name = typeof ( T ).Name;
-					instance = obj.AddComponent<T> ();
-				}
+				instance = this as T;
+				DontDestroyOnLoad ( gameObject );
 			}
-			return instance;
+			else
+			{
+				Destroy ( gameObject );
+			}
 		}
+		
 	}
-
-	#endregion
-
-	#region Methods
-
-	/// <summary>
-	/// Use this for initialization.
-	/// </summary>
-	protected virtual void Awake ()
-	{
-		if ( instance == null )
-		{
-			instance = this as T;
-			DontDestroyOnLoad ( gameObject );
-		}
-		else
-		{
-			Destroy ( gameObject );
-		}
-	}
-
-	#endregion
-	
 }
 

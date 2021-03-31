@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using ProgettoEsame2021.Scripts.DesignPatterns;
+using ProgettoEsame2021.Scripts.DesignPatterns.Composite;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
