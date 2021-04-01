@@ -16,10 +16,6 @@ namespace ProgettoEsame2021.Scripts
         
         //Riferimenti ad altri classi.
         private QuestionLevel ql;
-
-        //TODO probabilmente da eliminare.
-        //Booleano per verificare se il gioco ha inizio o no.
-        public bool startQuestion;
         
         //Funzione invocata al caricamento dello script.
         void Start()

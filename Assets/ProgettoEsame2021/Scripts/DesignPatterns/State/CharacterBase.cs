@@ -1,54 +1,60 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using ProgettoEsame2021.Scripts.DesignPatterns.State;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-//Base Class
-public abstract class CharacterBase : MonoBehaviour
-{    
-    //
-    [SerializeField] private ICharacterState currentState;
-    
-    public IdleState idleState = new IdleState();
-    public AttackState attackState = new AttackState();
-    public DeadState deadState = new DeadState();
-    
-    //
-    public int health;
-    //Healthbar del player.
-    public Slider lifeSlider;
-        
-    //Variabili per associare lo "spawn" del projectile.
-    public  GameObject originShooting;
-    public  GameObject projectile;
-    public  ParticleSystem projectileEmitter;
-    public ParticleSystem takingDamageEmitter;
-        
-    //OffSet
-    protected Vector3 offset = new Vector3(0.20f,0,0);
-        
-    //Bool per verificare se il player è morto(Game Over).
-    public bool isDead;
-    //
-    public bool canAttack;
-        
-    //Variabile per riprodurre uno shooting sound.
-    public AudioClip shootingSound;
 
-    //
-    public abstract void Shoot();
-
-    public abstract void OnTriggerEnter2D(Collider2D other);
-
-    private void OnEnable()
-    {
-        currentState = idleState;
-    }
+namespace ProgettoEsame2021.Scripts.DesignPatterns.State
+{
+    //Classe Base da cui derivano Player, Enemy.
+    public abstract class CharacterBase : MonoBehaviour
+    {    
+        //Variabile che definisce lo stato in cui ci troviamo.
+        //[SerializeField] è un attributo per vedere il valore nel GameEngine (di Debug).
+        [SerializeField] private ICharacterState currentState;
+        
+        //Variabili che definiscono il tipo di stato che si può assumere.
+        public IdleState idleState = new IdleState();
+        public AttackState attackState = new AttackState();
+        public DeadState deadState = new DeadState();
     
-    //Il DoState viene eseguito in continuazione, ma cambia a seconda dello stato in cui siamo.
-    private void Update()
-    {
-        currentState = currentState.DoState(this);
+        //Variabile che definisce la vita degli oggetti(Player,Enemy).
+        public int health;
+        
+        //Oggetto di gioco per mostrare a video la vita.
+        public Slider lifeSlider;
+        
+        //Oggetti di gioco per gestire le funzionalità del proiettile.
+        public  GameObject originShooting;
+        public  GameObject projectile;
+        public  ParticleSystem projectileEmitter;
+        public  ParticleSystem takingDamageEmitter;
+        public  AudioClip shootingSound;
+        
+        //OffSet per la posizione del proiettile a video.
+        protected Vector3 offset = new Vector3(0.20f,0,0);
+        
+        //Variabile per verificare se l'oggetto(Player,Enemy) e' "morto"(health = 0).
+        public bool isDead;
+        
+        //Variabile per stabilire se si può attaccare.
+        public bool canAttack;
+        
+        //Funzione da overridare per definire l'attacco.
+        public abstract void Shoot();
+
+        //Funzione da overridere per definire il contatto con il proiettile a seconda di quale sia il soggetto(Player,Enemy).
+        public abstract void OnTriggerEnter2D(Collider2D other);
+
+        //Funzione per inizializzare i valori. OnEnable viene eseguito prima della funzione Start.
+        private void OnEnable()
+        {
+            currentState = idleState;
+        }
+    
+        //Funzione che viene continuamente eseguita ogni frame.
+        private void Update()
+        {
+            //Invochiamo continuamente il DoState che restituisce lo stato su cui ci troviamo. 
+            currentState = currentState.DoState(this);
+        }
     }
 }

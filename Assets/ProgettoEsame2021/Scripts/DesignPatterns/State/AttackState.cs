@@ -1,21 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class AttackState : ICharacterState
+namespace ProgettoEsame2021.Scripts.DesignPatterns.State
 {
-    public ICharacterState DoState(CharacterBase character)
+    //Classe che gestisce lo stato di Attacco.
+    public class AttackState : ICharacterState
     {
-        Debug.Log("sto attaccando!!!");
-        //Todo impostare il booleano  canAttack nel gamemanager;
-        //character.Shoot();
-        if (character.canAttack)
+        //Funzione che definisce il comportamento dello stato.
+        public ICharacterState DoState(CharacterBase character)
         {
-            character.Shoot();
-            character.canAttack = false;
-        }
+            Debug.Log("sto attaccando!");
+
+            if (character.canAttack)
+            {
+                character.Shoot();
+                character.canAttack = false;
+            }
             
-        return character.idleState;
-    }
+            return character.idleState;
+        }
     
+    }
 }

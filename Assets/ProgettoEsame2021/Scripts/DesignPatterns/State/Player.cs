@@ -1,42 +1,40 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
-namespace ProgettoEsame2021.Scripts
+namespace ProgettoEsame2021.Scripts.DesignPatterns.State
 {
     public class Player : CharacterBase
     {
-        //Questo damage e' definito solo sul Player poiche' serve per il PowerUp.
-        private int damage = 1;
+        //Siccome non era possibile accedere al Prefab dell'enemy proiettile a RunTime per modificarne il damage.
+        //Variabile specifica del Player poichè utile ai fini del PowerUp.
+        private int _damage = 1;
 
+        //Propietà
         public int Damage
         {
-            get => damage;
-            set => damage = value;
+            get => _damage;
+            set => _damage = value;
         }
         
-        //Funzione per gestire lo shooting del player.
+        //Funzione per gestire l'attacco del player.
         public  override void Shoot()
         {
             if (canAttack)
             {
-                //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
+                //Funzione per lo spawn visivo del proiettile (Definita in MonoBehaviour).
                 Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
-                //Riproduzione del sound
                 AudioSource.PlayClipAtPoint(shootingSound,originShooting.transform.position,1);
-                //Fa partire l'emmiters (particle system)
+                //Particle System giallo.
                 projectileEmitter.Play();
             }
         }
         
-        //Funzione per far gestire la morte del player.
+        //Funzione per far gestire il contatto col proiettile, del nemico col player.
         public override void OnTriggerEnter2D(Collider2D other)
         {
             Destroy(other.gameObject);
-            //Mostra i cuori se prendi danno.
+            //Particle System cuori.
             takingDamageEmitter.Play();
-            // Settare la vita del player -1 se prende danni
+            //Imposto la vita del player a -1.
             var damage = other.GetComponent<ProjectileEnemy>().Damage;
             health -= damage;
             lifeSlider.value -= damage;

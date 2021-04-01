@@ -1,34 +1,29 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using ProgettoEsame2021.Scripts;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace ProgettoEsame2021.Scripts
+namespace ProgettoEsame2021.Scripts.DesignPatterns.State
 {
     public class Enemy : CharacterBase
     {
-        
-        //Funzione per gestire lo shooting del nemico.
+        //Funzione per gestire l'attacco del nemico.
         public override void Shoot()
         {
             if (canAttack)
             {
-                //Funzione per lo spawn visivo del player (Definita in MonoBehaviour)
+                //Funzione per lo spawn visivo del proiettile (Definita in MonoBehaviour).
                 Instantiate(projectile, originShooting.transform.position + offset, Quaternion.identity);
                 AudioSource.PlayClipAtPoint(shootingSound, originShooting.transform.position, 1);
-                //Fa partire l'emmiters (particle system)
+                //Particle System giallo
                 projectileEmitter.Play();
             }
         }
 
-        //Funzione per far gestire la morte del nemico.
+        //Funzione per far gestire il contatto col proiettile, del player col nemico.
         public override void OnTriggerEnter2D(Collider2D other)
         {
             Destroy(other.gameObject);
-            //Mostra i cuori se prendi danno.
+            //Particle System cuori
             takingDamageEmitter.Play();
-            // Settare la vita del player -1 se prende danni
+            //Imposto la vita dell'enemy a -1.
             var damage = other.GetComponent<ProjectilePlayer>().Damage;
             health -= damage;
             lifeSlider.value -= damage;
@@ -38,6 +33,6 @@ namespace ProgettoEsame2021.Scripts
 
             }
         }
-        
     }
 }
+

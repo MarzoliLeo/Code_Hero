@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine.UI;
-using UnityEngine;
+﻿using ProgettoEsame2021.Scripts.DesignPatterns.State;
 
 public interface ICharacterState
 {
