@@ -37,6 +37,7 @@ namespace ProgettoEsame2021.Scripts
             
             questionText.text = q.question;
 
+
             _answerController[0].SetAnswer(q.answers[0].text, q.answers[0].isCorrect);
             _answerController[1].SetAnswer(q.answers[1].text, q.answers[1].isCorrect);
             _answerController[2].SetAnswer(q.answers[2].text, q.answers[2].isCorrect);
@@ -59,7 +60,7 @@ namespace ProgettoEsame2021.Scripts
         private QuestionLevel QuestionDeserialize()
         {
             //Estraiamo i dati dal file Json rispettivo al livello in cui siamo e restituiamo il contenuto.
-            string json = File.ReadAllText(Application.dataPath + "/ProgettoEsame2021/Json/Level" +
+            string json = File.ReadAllText( Application.dataPath + "/StreamingAssets" + "/Json/Level" +
                                            GameManager.Instance.DestinationWaypoint.levelIndex + ".json");
             QuestionLevel deserializedQuestionLevel = JsonUtility.FromJson<QuestionLevel>(json);
             return deserializedQuestionLevel;

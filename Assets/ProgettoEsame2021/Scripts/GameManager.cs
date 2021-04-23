@@ -173,7 +173,7 @@ namespace ProgettoEsame2021.Scripts
         public void SetHealthGame()
         {
             //Setta la vita del player in base al livello, se il powerUp è attivo...
-            if (_playerRef != null && PoweUpManager.Instance.increaseHealth.Active)
+            if (_playerRef != null && PowerUpManager.Instance.increaseHealth.Active)
             {
                 //La vita base è uguale al livello in cui si è + 1 per il powerUp.
                 _playerRef.health = DestinationWaypoint.levelIndex + 1;
@@ -183,7 +183,7 @@ namespace ProgettoEsame2021.Scripts
                 _playerRef.lifeSlider.value = _playerRef.lifeSlider.maxValue;
                 
                 //Reset del powerUp per evitare il perdurarsi nei livelli.
-                PoweUpManager.Instance.increaseHealth.Active = false;
+                PowerUpManager.Instance.increaseHealth.Active = false;
 
             }
             else //... se il powerUp non e' attivo.

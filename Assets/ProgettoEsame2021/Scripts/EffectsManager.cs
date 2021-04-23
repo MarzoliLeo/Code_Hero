@@ -11,18 +11,12 @@ namespace ProgettoEsame2021.Scripts
         public GameObject victoryText;
         public GameObject gameOverText;
         public GameObject canvasSliderTimer;
-
-        //Riferimenti alle classi.
-        private Player _playerRef;
-        private Enemy _enemyRef;
+        
         
         //La Funzione Start verrà chiamato appena lo script sarà caricato, prima di qualsiasi altro metodo.
         //Funzione per l'inizializzazione delle variabili.
         private void Start()
         {
-            _playerRef = FindObjectOfType<Player>();
-            _enemyRef = FindObjectOfType<Enemy>();
-            
             InitializeCanvases();
         }
         

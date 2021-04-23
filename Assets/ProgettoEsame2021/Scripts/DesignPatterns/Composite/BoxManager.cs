@@ -8,7 +8,7 @@ namespace ProgettoEsame2021.Scripts.DesignPatterns.Composite
     public class BoxManager : Singleton<BoxManager>
     {
         //Riferimenti ad altre classi.
-        private PoweUpManager _powerUpManager;
+        private PowerUpManager _powerUpManager;
         private EffectsManager _effectsManager;
     
         //Creazione dei components (Box).
@@ -30,7 +30,7 @@ namespace ProgettoEsame2021.Scripts.DesignPatterns.Composite
         //Funzione per inizializzare la variabili, viene richiamata al caricamento dello script, prima di tutte le altre.
         private void Start()
         {
-            _powerUpManager = FindObjectOfType<PoweUpManager>();
+            _powerUpManager = FindObjectOfType<PowerUpManager>();
         
             //commonBox = 3 powerup => Che risulterà in 1 Random.
             commonBox.AddComponent(_powerUpManager.increaseDmg);

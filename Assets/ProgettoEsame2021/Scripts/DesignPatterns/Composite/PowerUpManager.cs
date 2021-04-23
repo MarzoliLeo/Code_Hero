@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace ProgettoEsame2021.Scripts.DesignPatterns.Composite
 {
-    public class PoweUpManager : Singleton<PoweUpManager>
+    public class PowerUpManager : Singleton<PowerUpManager>
     {
         //Creazione delle foglie (PowerUps).
         public IComponent increaseDmg = new PowerUp("Increase Damage");
